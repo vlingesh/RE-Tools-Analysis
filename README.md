@@ -5,16 +5,16 @@ This is a masters level course project for CS6501-004 Defense against the Dark A
 ### Getting Started
 
 ### Prerequisites
-Ghidra__
-Zipr__
-Ida Pro__
+Ghidra<br />
+Zipr<br />
+Ida Pro<br />
 
 ### Versioning
 
 ### Authors
-Vijay Lingesh__
-Omkar Bhatt__
-Zoya Yeprem__
+Vijay Lingesh<br />
+Omkar Bhatt<br />
+Zoya Yeprem<br />
 
 
 ### Acknowledgments
