@@ -1,0 +1,1070 @@
++++ LD_LIBRARY_PATH=:/home/zuser/RE-Tools-Analysis/src/test/temp:/home/zuser/RE-Tools-Analysis/src/test/temp:/lib:/home/zuser/RE-Tools-Analysis/src/test/temp:/home/zuser/RE-Tools-Analysis/src/test/temp:/opt/ps_zipr/irdb-libs/lib:/opt/ps_zipr/irdb-libs/lib:/opt/ps_zipr/irdb-libs/lib:/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879:/opt/ps_zipr/zipr_install/lib
++++ /opt/ps_zipr/zipr_install/bin/zipr.exe --variant 6 --zipr:objcopy objcopy
+File (/opt/ps_zipr/zipr_install/plugins/.ignore) does not have proper extension, skipping.
+Section Headers:
+[  Nr ] Type              Addr             Size             ES   Flg
+        Lk   Inf  Al      Name
+[    0] NULL              0000000000000000 0000000000000000 0000     
+        0000 0000 0000                      
+[    1] PROGBITS          0000000000400200 000000000000001c 0000 A   
+        0000 0000 0001    .interp           
+[    2] NOTE              000000000040021c 0000000000000020 0000 A   
+        0000 0000 0004    .note.ABI-tag     
+[    3] NOTE              000000000040023c 0000000000000024 0000 A   
+        0000 0000 0004    .note.gnu.build-id 
+[    4] ? (0x6ffffff6)    0000000000400260 0000000000000030 0000 A   
+        0005 0000 0008    .gnu.hash         
+[    5] DYNSYM            0000000000400290 0000000000000798 0018 A   
+        0006 0001 0008    .dynsym           
+[    6] STRTAB            0000000000400a28 000000000000031c 0000 A   
+        0000 0000 0001    .dynstr           
+[    7] ? (0x6fffffff)    0000000000400d44 00000000000000a2 0002 A   
+        0005 0000 0002    .gnu.version      
+[    8] ? (0x6ffffffe)    0000000000400de8 0000000000000060 0000 A   
+        0006 0002 0008    .gnu.version_r    
+[    9] RELA              0000000000400e48 0000000000000060 0018 A   
+        0005 0000 0008    .rela.dyn         
+[   10] RELA              0000000000400ea8 00000000000006f0 0018 A   
+        0005 0017 0008    .rela.plt         
+[   11] PROGBITS          0000000000401598 000000000000001a 0000 AX  
+        0000 0000 0004    .init             
+[   12] PROGBITS          00000000004015c0 00000000000004b0 0010 AX  
+        0000 0000 0010    .plt              
+[   13] PROGBITS          0000000000401a70 0000000000003992 0000 AX  
+        0000 0000 0010    .text             
+[   14] PROGBITS          0000000000405404 0000000000000009 0000 AX  
+        0000 0000 0004    .fini             
+[   15] PROGBITS          0000000000405420 0000000000001180 0000 A   
+        0000 0000 0020    .rodata           
+[   16] PROGBITS          00000000004065a0 000000000000026c 0000 A   
+        0000 0000 0004    .eh_frame_hdr     
+[   17] PROGBITS          0000000000406810 0000000000000d6c 0000 A   
+        0000 0000 0008    .eh_frame         
+[   18] INIT_ARRAY        0000000000607580 0000000000000008 0008 WA  
+        0000 0000 0008    .init_array       
+[   19] FINI_ARRAY        0000000000607588 0000000000000008 0008 WA  
+        0000 0000 0008    .fini_array       
+[   20] PROGBITS          0000000000607590 0000000000000008 0000 WA  
+        0000 0000 0008    .jcr              
+[   21] DYNAMIC           0000000000607598 00000000000001f0 0010 WA  
+        0006 0000 0008    .dynamic          
+[   22] PROGBITS          0000000000607788 0000000000000008 0008 WA  
+        0000 0000 0008    .got              
+[   23] PROGBITS          0000000000607790 0000000000000268 0008 WA  
+        0000 0000 0008    .got.plt          
+[   24] PROGBITS          00000000006079f8 0000000000000010 0000 WA  
+        0000 0000 0008    .data             
+[   25] NOBITS            0000000000607a40 0000000000010328 0000 WA  
+        0000 0000 0040    .bss              
+[   26] PROGBITS          0000000000000000 0000000000000040 0001     
+        0000 0000 0001    .comment          
+[   27] PROGBITS          0000000000000000 00000000000a07d9 0000     
+        0000 0000 0001    pydata            
+[   28] STRTAB            0000000000000000 00000000000000ff 0000     
+        0000 0000 0001    .shstrtab         
+Key to Flags: W (write), A (alloc), X (execute)
+
+
+# ATTRIBUTE Zipr::jumps_inserted_for_multiple_fallthroughs=0
+Adding scoop .text at 401598 - 40541f
+Gap filling with a scoop between 0x400de6 and 0x400de7
+Gap filling with a scoop between 0x4065a0 and 0x606000
+New free space: 0x618000-0xffffffffffffffff
+Pre-allocating scoop .init_array=(607580-607587)
+Pre-allocating scoop .fini_array=(607588-60758f)
+Pre-allocating scoop .jcr=(607590-607597)
+Pre-allocating scoop .dynstr=(400a28-400d43)
+Pre-allocating scoop .interp=(400200-40021b)
+Pre-allocating scoop .gnu.version=(400d44-400de5)
+Pre-allocating scoop .dynamic=(607598-607787)
+Pre-allocating scoop .got=(607788-60778f)
+Pre-allocating scoop .data=(6079f8-607a07)
+Pre-allocating scoop .rela.plt=(400ea8-401597)
+Pre-allocating scoop .rodata=(405420-40659f)
+Pre-allocating scoop .note.ABI-tag=(40021c-40023b)
+Pre-allocating scoop .note.gnu.build-id=(40023c-40025f)
+Pre-allocating scoop .gnu.hash=(400260-40028f)
+Pre-allocating scoop .dynsym=(400290-400a27)
+Pre-allocating scoop .gnu.version_r=(400de8-400e47)
+Pre-allocating scoop .rela.dyn=(400e48-400ea7)
+Pre-allocating scoop .got.plt=(607790-6079f7)
+Pre-allocating scoop .bss=(607a40-617d67)
+# ATTRIBUTE Zipr_Unpinning::scoop_unpin_total_unpins=76
+# ATTRIBUTE Zipr_Unpinning::scoop_unpin_missed_unpins=0
+# ATTRIBUTE Zipr_Unpinning::insn_unpin_total_unpins=0
+# ATTRIBUTE Zipr_Unpinning::insn_unpin_missed_unpins=0
+Expanded range: from: (0x40159d - 0x40160f) to: (0x40159d - 0x401610) 
+Expanded range: from: (0x40159d - 0x401610) to: (0x40159d - 0x401611) 
+Expanded range: from: (0x40159d - 0x401611) to: (0x40159d - 0x401612) 
+Expanded range: from: (0x40159d - 0x401612) to: (0x40159d - 0x401613) 
+Expanded range: from: (0x401615 - 0x401a6f) to: (0x401614 - 0x401a6f) 
+Expanded range: from: (0x401614 - 0x401a6f) to: (0x40159d - 0x401a6f) 
+Expanded range: from: (0x401a77 - 0x401ae7) to: (0x401a77 - 0x401ae8) 
+Expanded range: from: (0x401a77 - 0x401ae8) to: (0x401a77 - 0x401ae9) 
+Expanded range: from: (0x401a77 - 0x401ae9) to: (0x401a77 - 0x401aea) 
+Expanded range: from: (0x401a77 - 0x401aea) to: (0x401a77 - 0x401aeb) 
+Expanded range: from: (0x401a77 - 0x401aeb) to: (0x401a77 - 0x401aec) 
+Expanded range: from: (0x401a7a - 0x401aec) to: (0x401a7a - 0x401aed) 
+Expanded range: from: (0x401a7a - 0x401aed) to: (0x401a7a - 0x401aee) 
+Expanded range: from: (0x401a7a - 0x401aee) to: (0x401a7a - 0x401aef) 
+Expanded range: from: (0x401a7a - 0x401aef) to: (0x401a7a - 0x401af0) 
+Expanded range: from: (0x401af2 - 0x401b31) to: (0x401af1 - 0x401b31) 
+Expanded range: from: (0x401af1 - 0x401b31) to: (0x401a7a - 0x401b31) 
+Expanded range: from: (0x401b37 - 0x401ba9) to: (0x401b37 - 0x401baa) 
+Expanded range: from: (0x401b37 - 0x401baa) to: (0x401b37 - 0x401bab) 
+Expanded range: from: (0x401b37 - 0x401bab) to: (0x401b37 - 0x401bac) 
+Expanded range: from: (0x401b37 - 0x401bac) to: (0x401b37 - 0x401bad) 
+Expanded range: from: (0x401baf - 0x40494f) to: (0x401bae - 0x40494f) 
+Expanded range: from: (0x401bae - 0x40494f) to: (0x401b37 - 0x40494f) 
+Expanded range: from: (0x404965 - 0x4049d7) to: (0x404965 - 0x4049d8) 
+Expanded range: from: (0x404965 - 0x4049d8) to: (0x404965 - 0x4049d9) 
+Expanded range: from: (0x404965 - 0x4049d9) to: (0x404965 - 0x4049da) 
+Expanded range: from: (0x404965 - 0x4049da) to: (0x404965 - 0x4049db) 
+Expanded range: from: (0x4049dd - 0x40538f) to: (0x4049dc - 0x40538f) 
+Expanded range: from: (0x4049dc - 0x40538f) to: (0x404965 - 0x40538f) 
+Expanded range: from: (0x405406 - 0x405407) to: (0x405406 - 0x405408) 
+Expanded range: from: (0x405406 - 0x405408) to: (0x405406 - 0x405409) 
+Expanded range: from: (0x405406 - 0x405409) to: (0x405406 - 0x40540a) 
+Expanded range: from: (0x405406 - 0x40540a) to: (0x405406 - 0x40540b) 
+Expanded range: from: (0x40540d - 0x40541a) to: (0x40540c - 0x40541a) 
+Expanded range: from: (0x40540c - 0x40541a) to: (0x405406 - 0x40541a) 
+Expanded range: from: (0x405409 - 0x40541a) to: (0x405409 - 0x40541b) 
+Expanded range: from: (0x405409 - 0x40541b) to: (0x405409 - 0x40541c) 
+Expanded range: from: (0x405409 - 0x40541c) to: (0x405409 - 0x40541d) 
+Expanded range: from: (0x405409 - 0x40541d) to: (0x405409 - 0x40541e) 
+Expanded range: from: (0x405409 - 0x40541e) to: (0x405409 - 0x40541f) 
+Totals:  2-byters=0, 5-byters=7
+Push64_reloc: elide PinningEnd as type==ET_EXEC
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=fix_call_fallthrough
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Adding new dollop for reloc of type=data_to_insn_ptr
+Found an instruction in a new dollop that is already in a dollop: 401fb5
+Found an instruction in a new dollop that is already in a dollop: 402804
+Found an instruction in a new dollop that is already in a dollop: 40326d
+Found an instruction in a new dollop that is already in a dollop: 403fb0
+Found an instruction in a new dollop that is already in a dollop: 404259
+Found an instruction in a new dollop that is already in a dollop: 4041a8
+Found an instruction in a new dollop that is already in a dollop: 405286
+Found an instruction in a new dollop that is already in a dollop: 401bed
+Found an instruction in a new dollop that is already in a dollop: 401cee
+Found an instruction in a new dollop that is already in a dollop: 404a58
+All Targets updated.  changed_count=5. Update_count=4341.
+# ATTRIBUTE Zipr::pins_detected=7
+# ATTRIBUTE Zipr::placement_queue_size=556
+Push64_reloc: elide CallbackLinkingEnd as type==ET_EXEC
+Unpin::Unpinned data_to_insn_ptr insn (246:mov edi, 0x607590) with offset=0.  Insn moved to 40160b
+Unpin::Unpinned data_to_insn_ptr insn (234:cmp byte [7 + 0x607a51], 0) with offset=0.  Insn moved to 404a05
+Unpin::Unpinned data_to_insn_ptr insn (ee:push 0x24) with offset=138.  Insn moved to 401aac
+Unpin::Unpinned data_to_insn_ptr insn (f4:push 0x25) with offset=140.  Insn moved to 4015cf
+Unpin::Unpinned data_to_insn_ptr insn (fa:push 0x26) with offset=148.  Insn moved to 4065be
+Unpin::Unpinned data_to_insn_ptr insn (100:push 0x27) with offset=150.  Insn moved to 401ab6
+Unpin::Unpinned data_to_insn_ptr insn (106:push 0x28) with offset=158.  Insn moved to 401ac0
+Unpin::Unpinned data_to_insn_ptr insn (10c:push 0x29) with offset=160.  Insn moved to 401b5f
+Unpin::Unpinned data_to_insn_ptr insn (112:push 0x2a) with offset=168.  Insn moved to 4015d9
+Unpin::Unpinned data_to_insn_ptr insn (118:push 0x2b) with offset=170.  Insn moved to 401aca
+Unpin::Unpinned data_to_insn_ptr insn (11e:push 0x2c) with offset=178.  Insn moved to 401ad4
+Unpin::Unpinned data_to_insn_ptr insn (124:push 0x2d) with offset=180.  Insn moved to 401ade
+Unpin::Unpinned data_to_insn_ptr insn (12a:push 0x2e) with offset=188.  Insn moved to 4053e7
+Unpin::Unpinned data_to_insn_ptr insn (130:push 0x2f) with offset=190.  Insn moved to 4049bf
+Unpin::Unpinned data_to_insn_ptr insn (136:push 0x30) with offset=198.  Insn moved to 4049c9
+Unpin::Unpinned data_to_insn_ptr insn (13c:push 0x31) with offset=1a0.  Insn moved to 401b69
+Unpin::Unpinned data_to_insn_ptr insn (142:push 0x32) with offset=1a8.  Insn moved to 401ae8
+Unpin::Unpinned data_to_insn_ptr insn (148:push 0x33) with offset=1b0.  Insn moved to 4053f1
+Unpin::Unpinned data_to_insn_ptr insn (14e:push 0x34) with offset=1b8.  Insn moved to 401af2
+Unpin::Unpinned data_to_insn_ptr insn (154:push 0x35) with offset=1c0.  Insn moved to 401afc
+Unpin::Unpinned data_to_insn_ptr insn (15a:push 0x36) with offset=1c8.  Insn moved to 4049d3
+Unpin::Unpinned data_to_insn_ptr insn (160:push 0x37) with offset=1d0.  Insn moved to 4065c8
+Unpin::Unpinned data_to_insn_ptr insn (166:push 0x38) with offset=1d8.  Insn moved to 4049dd
+Unpin::Unpinned data_to_insn_ptr insn (16c:push 0x39) with offset=1e0.  Insn moved to 4049e7
+Unpin::Unpinned data_to_insn_ptr insn (172:push 0x3a) with offset=1e8.  Insn moved to 4065d2
+Unpin::Unpinned data_to_insn_ptr insn (178:push 0x3b) with offset=1f0.  Insn moved to 401b06
+Unpin::Unpinned data_to_insn_ptr insn (17e:push 0x3c) with offset=1f8.  Insn moved to 401b73
+Unpin::Unpinned data_to_insn_ptr insn (184:push 0x3d) with offset=200.  Insn moved to 4049f1
+Unpin::Unpinned data_to_insn_ptr insn (18a:push 0x3e) with offset=208.  Insn moved to 4065dc
+Unpin::Unpinned data_to_insn_ptr insn (190:push 0x3f) with offset=210.  Insn moved to 401b7d
+Unpin::Unpinned data_to_insn_ptr insn (196:push 0x40) with offset=218.  Insn moved to 401b87
+Unpin::Unpinned data_to_insn_ptr insn (19c:push 0x41) with offset=220.  Insn moved to 4015e3
+Unpin::Unpinned data_to_insn_ptr insn (1a2:push 0x42) with offset=228.  Insn moved to 4015ed
+Unpin::Unpinned data_to_insn_ptr insn (1a8:push 0x43) with offset=230.  Insn moved to 4015f7
+Unpin::Unpinned data_to_insn_ptr insn (1ae:push 0x44) with offset=238.  Insn moved to 401601
+Unpin::Unpinned data_to_insn_ptr insn (1b4:push 0x45) with offset=240.  Insn moved to 401b91
+Unpin::Unpinned data_to_insn_ptr insn (1ba:push 0x46) with offset=248.  Insn moved to 401b9b
+Unpin::Unpinned data_to_insn_ptr insn (1c0:push 0x47) with offset=250.  Insn moved to 401b10
+Unpin::Unpinned data_to_insn_ptr insn (1c6:push 0x48) with offset=258.  Insn moved to 401ba5
+Unpin::Unpinned data_to_insn_ptr insn (1cc:push 0x49) with offset=260.  Insn moved to 4049fb
+Unpin::Unpinned data_to_insn_ptr insn (16:push 0) with offset=18.  Insn moved to 405395
+Unpin::Unpinned data_to_insn_ptr insn (1c:push 1) with offset=20.  Insn moved to 404952
+Unpin::Unpinned data_to_insn_ptr insn (22:push 2) with offset=28.  Insn moved to 40159d
+Unpin::Unpinned data_to_insn_ptr insn (28:push 3) with offset=30.  Insn moved to 401a7a
+Unpin::Unpinned data_to_insn_ptr insn (2e:push 4) with offset=38.  Insn moved to 401b37
+Unpin::Unpinned data_to_insn_ptr insn (34:push 5) with offset=40.  Insn moved to 404965
+Unpin::Unpinned data_to_insn_ptr insn (3a:push 6) with offset=48.  Insn moved to 4053ab
+Unpin::Unpinned data_to_insn_ptr insn (40:push 7) with offset=50.  Insn moved to 4065a0
+Unpin::Unpinned data_to_insn_ptr insn (46:push 8) with offset=58.  Insn moved to 4053b5
+Unpin::Unpinned data_to_insn_ptr insn (4c:push 9) with offset=60.  Insn moved to 405409
+Unpin::Unpinned data_to_insn_ptr insn (52:push 0xa) with offset=68.  Insn moved to 401b41
+Unpin::Unpinned data_to_insn_ptr insn (58:push 0xb) with offset=70.  Insn moved to 4053bf
+Unpin::Unpinned data_to_insn_ptr insn (5e:push 0xc) with offset=78.  Insn moved to 4053c9
+Unpin::Unpinned data_to_insn_ptr insn (64:push 0xd) with offset=80.  Insn moved to 40496f
+Unpin::Unpinned data_to_insn_ptr insn (6a:push 0xe) with offset=88.  Insn moved to 4015a7
+Unpin::Unpinned data_to_insn_ptr insn (70:push 0xf) with offset=90.  Insn moved to 401a84
+Unpin::Unpinned data_to_insn_ptr insn (76:push 0x10) with offset=98.  Insn moved to 401a8e
+Unpin::Unpinned data_to_insn_ptr insn (7c:push 0x11) with offset=a0.  Insn moved to 4053d3
+Unpin::Unpinned data_to_insn_ptr insn (82:push 0x12) with offset=a8.  Insn moved to 404979
+Unpin::Unpinned data_to_insn_ptr insn (88:push 0x13) with offset=b0.  Insn moved to 4053dd
+Unpin::Unpinned data_to_insn_ptr insn (8e:push 0x14) with offset=b8.  Insn moved to 404983
+Unpin::Unpinned data_to_insn_ptr insn (94:push 0x15) with offset=c0.  Insn moved to 40498d
+Unpin::Unpinned data_to_insn_ptr insn (9a:push 0x16) with offset=c8.  Insn moved to 4015b1
+Unpin::Unpinned data_to_insn_ptr insn (a0:push 0x17) with offset=d0.  Insn moved to 4065aa
+Unpin::Unpinned data_to_insn_ptr insn (a6:push 0x18) with offset=d8.  Insn moved to 405413
+Unpin::Unpinned data_to_insn_ptr insn (ac:push 0x19) with offset=e0.  Insn moved to 404997
+Unpin::Unpinned data_to_insn_ptr insn (b2:push 0x1a) with offset=e8.  Insn moved to 4049a1
+Unpin::Unpinned data_to_insn_ptr insn (b8:push 0x1b) with offset=f0.  Insn moved to 4015bb
+Unpin::Unpinned data_to_insn_ptr insn (be:push 0x1c) with offset=f8.  Insn moved to 4049ab
+Unpin::Unpinned data_to_insn_ptr insn (c4:push 0x1d) with offset=100.  Insn moved to 401b4b
+Unpin::Unpinned data_to_insn_ptr insn (ca:push 0x1e) with offset=108.  Insn moved to 401a98
+Unpin::Unpinned data_to_insn_ptr insn (d0:push 0x1f) with offset=110.  Insn moved to 4049b5
+Unpin::Unpinned data_to_insn_ptr insn (d6:push 0x20) with offset=118.  Insn moved to 401b55
+Unpin::Unpinned data_to_insn_ptr insn (dc:push 0x21) with offset=120.  Insn moved to 401aa2
+Unpin::Unpinned data_to_insn_ptr insn (e2:push 0x22) with offset=128.  Insn moved to 4065b4
+Unpin::Unpinned data_to_insn_ptr insn (e8:push 0x23) with offset=130.  Insn moved to 4015c5
+unpin:pcrel:new_disp=204458
+unpin:pcrel:new_insn_addr=40335a
+unpin:pcrel:Converting 20:jmp qword [6 + 0x6077b2] to jmp qword [6 + 0x204458] wrt no-object
+unpin:pcrel:new_disp=1ffc60
+unpin:pcrel:new_insn_addr=407b5a
+unpin:pcrel:Converting 26:jmp qword [6 + 0x6077ba] to jmp qword [6 + 0x1ffc60] wrt no-object
+unpin:pcrel:new_disp=200696
+unpin:pcrel:new_insn_addr=4070eb
+unpin:pcrel:Converting 2:mov rax, qword [7 + 0x607781] to mov rax, qword [7 + 0x200696] wrt no-object
+unpin:pcrel:new_disp=20430d
+unpin:pcrel:new_insn_addr=40349d
+unpin:pcrel:Converting 1a:jmp qword [6 + 0x6077aa] to jmp qword [6 + 0x20430d] wrt no-object
+unpin:pcrel:new_disp=204145
+unpin:pcrel:new_insn_addr=40365d
+unpin:pcrel:Converting 14:jmp qword [6 + 0x6077a2] to jmp qword [6 + 0x204145] wrt no-object
+unpin:pcrel:new_disp=204dc2
+unpin:pcrel:new_insn_addr=4029d0
+unpin:pcrel:Converting e:push qword [6 + 0x607792] to push qword [6 + 0x204dc2] wrt no-object
+unpin:pcrel:new_disp=204dc4
+unpin:pcrel:new_insn_addr=4029d6
+unpin:pcrel:Converting 10:jmp qword [6 + 0x60779a] to jmp qword [6 + 0x204dc4] wrt no-object
+unpin:pcrel:new_disp=204cc6
+unpin:pcrel:new_insn_addr=402afc
+unpin:pcrel:Converting 2c:jmp qword [6 + 0x6077c2] to jmp qword [6 + 0x204cc6] wrt no-object
+unpin:pcrel:new_disp=204c14
+unpin:pcrel:new_insn_addr=402bb6
+unpin:pcrel:Converting 32:jmp qword [6 + 0x6077ca] to jmp qword [6 + 0x204c14] wrt no-object
+unpin:pcrel:new_disp=2044da
+unpin:pcrel:new_insn_addr=4032f8
+unpin:pcrel:Converting 38:jmp qword [6 + 0x6077d2] to jmp qword [6 + 0x2044da] wrt no-object
+unpin:pcrel:new_disp=204b38
+unpin:pcrel:new_insn_addr=402ca2
+unpin:pcrel:Converting 3e:jmp qword [6 + 0x6077da] to jmp qword [6 + 0x204b38] wrt no-object
+unpin:pcrel:new_disp=204371
+unpin:pcrel:new_insn_addr=403471
+unpin:pcrel:Converting 44:jmp qword [6 + 0x6077e2] to jmp qword [6 + 0x204371] wrt no-object
+unpin:pcrel:new_disp=200147
+unpin:pcrel:new_insn_addr=4076a3
+unpin:pcrel:Converting 4a:jmp qword [6 + 0x6077ea] to jmp qword [6 + 0x200147] wrt no-object
+unpin:pcrel:new_disp=200634
+unpin:pcrel:new_insn_addr=4071be
+unpin:pcrel:Converting 50:jmp qword [6 + 0x6077f2] to jmp qword [6 + 0x200634] wrt no-object
+unpin:pcrel:new_disp=2044e7
+unpin:pcrel:new_insn_addr=403313
+unpin:pcrel:Converting 56:jmp qword [6 + 0x6077fa] to jmp qword [6 + 0x2044e7] wrt no-object
+unpin:pcrel:new_disp=204c93
+unpin:pcrel:new_insn_addr=402b6f
+unpin:pcrel:Converting 5c:jmp qword [6 + 0x607802] to jmp qword [6 + 0x204c93] wrt no-object
+unpin:pcrel:new_disp=204dfb
+unpin:pcrel:new_insn_addr=402a0f
+unpin:pcrel:Converting 62:jmp qword [6 + 0x60780a] to jmp qword [6 + 0x204dfb] wrt no-object
+unpin:pcrel:new_disp=1ffb04
+unpin:pcrel:new_insn_addr=407d0e
+unpin:pcrel:Converting 68:jmp qword [6 + 0x607812] to jmp qword [6 + 0x1ffb04] wrt no-object
+unpin:pcrel:new_disp=204389
+unpin:pcrel:new_insn_addr=403491
+unpin:pcrel:Converting 6e:jmp qword [6 + 0x60781a] to jmp qword [6 + 0x204389] wrt no-object
+unpin:pcrel:new_disp=204560
+unpin:pcrel:new_insn_addr=4032c2
+unpin:pcrel:Converting 74:jmp qword [6 + 0x607822] to jmp qword [6 + 0x204560] wrt no-object
+unpin:pcrel:new_disp=2044d6
+unpin:pcrel:new_insn_addr=403354
+unpin:pcrel:Converting 7a:jmp qword [6 + 0x60782a] to jmp qword [6 + 0x2044d6] wrt no-object
+unpin:pcrel:new_disp=200692
+unpin:pcrel:new_insn_addr=4071a0
+unpin:pcrel:Converting 80:jmp qword [6 + 0x607832] to jmp qword [6 + 0x200692] wrt no-object
+unpin:pcrel:new_disp=204558
+unpin:pcrel:new_insn_addr=4032e2
+unpin:pcrel:Converting 86:jmp qword [6 + 0x60783a] to jmp qword [6 + 0x204558] wrt no-object
+unpin:pcrel:new_disp=2043ab
+unpin:pcrel:new_insn_addr=403497
+unpin:pcrel:Converting 8c:jmp qword [6 + 0x607842] to jmp qword [6 + 0x2043ab] wrt no-object
+unpin:pcrel:new_disp=1ffd50
+unpin:pcrel:new_insn_addr=407afa
+unpin:pcrel:Converting 92:jmp qword [6 + 0x60784a] to jmp qword [6 + 0x1ffd50] wrt no-object
+unpin:pcrel:new_disp=2049b9
+unpin:pcrel:new_insn_addr=402e99
+unpin:pcrel:Converting 98:jmp qword [6 + 0x607852] to jmp qword [6 + 0x2049b9] wrt no-object
+unpin:pcrel:new_disp=20479e
+unpin:pcrel:new_insn_addr=4030bc
+unpin:pcrel:Converting 9e:jmp qword [6 + 0x60785a] to jmp qword [6 + 0x20479e] wrt no-object
+unpin:pcrel:new_disp=1ffc3a
+unpin:pcrel:new_insn_addr=407c28
+unpin:pcrel:Converting a4:jmp qword [6 + 0x607862] to jmp qword [6 + 0x1ffc3a] wrt no-object
+unpin:pcrel:new_disp=2001cd
+unpin:pcrel:new_insn_addr=40769d
+unpin:pcrel:Converting aa:jmp qword [6 + 0x60786a] to jmp qword [6 + 0x2001cd] wrt no-object
+unpin:pcrel:new_disp=2049b8
+unpin:pcrel:new_insn_addr=402eba
+unpin:pcrel:Converting b0:jmp qword [6 + 0x607872] to jmp qword [6 + 0x2049b8] wrt no-object
+unpin:pcrel:new_disp=204d05
+unpin:pcrel:new_insn_addr=402b75
+unpin:pcrel:Converting b6:jmp qword [6 + 0x60787a] to jmp qword [6 + 0x204d05] wrt no-object
+unpin:pcrel:new_disp=1ffc60
+unpin:pcrel:new_insn_addr=407c22
+unpin:pcrel:Converting bc:jmp qword [6 + 0x607882] to jmp qword [6 + 0x1ffc60] wrt no-object
+unpin:pcrel:new_disp=1ffbfc
+unpin:pcrel:new_insn_addr=407c8e
+unpin:pcrel:Converting c2:jmp qword [6 + 0x60788a] to jmp qword [6 + 0x1ffbfc] wrt no-object
+unpin:pcrel:new_disp=200347
+unpin:pcrel:new_insn_addr=40754b
+unpin:pcrel:Converting c8:jmp qword [6 + 0x607892] to jmp qword [6 + 0x200347] wrt no-object
+unpin:pcrel:new_disp=2044f7
+unpin:pcrel:new_insn_addr=4033a3
+unpin:pcrel:Converting ce:jmp qword [6 + 0x60789a] to jmp qword [6 + 0x2044f7] wrt no-object
+unpin:pcrel:new_disp=1fff3e
+unpin:pcrel:new_insn_addr=407964
+unpin:pcrel:Converting d4:jmp qword [6 + 0x6078a2] to jmp qword [6 + 0x1fff3e] wrt no-object
+unpin:pcrel:new_disp=1fff65
+unpin:pcrel:new_insn_addr=407945
+unpin:pcrel:Converting da:jmp qword [6 + 0x6078aa] to jmp qword [6 + 0x1fff65] wrt no-object
+unpin:pcrel:new_disp=20045a
+unpin:pcrel:new_insn_addr=407458
+unpin:pcrel:Converting e0:jmp qword [6 + 0x6078b2] to jmp qword [6 + 0x20045a] wrt no-object
+unpin:pcrel:new_disp=204525
+unpin:pcrel:new_insn_addr=403395
+unpin:pcrel:Converting e6:jmp qword [6 + 0x6078ba] to jmp qword [6 + 0x204525] wrt no-object
+unpin:pcrel:new_disp=204da1
+unpin:pcrel:new_insn_addr=402b21
+unpin:pcrel:Converting ec:jmp qword [6 + 0x6078c2] to jmp qword [6 + 0x204da1] wrt no-object
+unpin:pcrel:new_disp=1ffdaf
+unpin:pcrel:new_insn_addr=407b1b
+unpin:pcrel:Converting f2:jmp qword [6 + 0x6078ca] to jmp qword [6 + 0x1ffdaf] wrt no-object
+unpin:pcrel:new_disp=1ffd6c
+unpin:pcrel:new_insn_addr=407b66
+unpin:pcrel:Converting f8:jmp qword [6 + 0x6078d2] to jmp qword [6 + 0x1ffd6c] wrt no-object
+unpin:pcrel:new_disp=20458c
+unpin:pcrel:new_insn_addr=40334e
+unpin:pcrel:Converting fe:jmp qword [6 + 0x6078da] to jmp qword [6 + 0x20458c] wrt no-object
+unpin:pcrel:new_disp=2042d7
+unpin:pcrel:new_insn_addr=40360b
+unpin:pcrel:Converting 104:jmp qword [6 + 0x6078e2] to jmp qword [6 + 0x2042d7] wrt no-object
+unpin:pcrel:new_disp=200726
+unpin:pcrel:new_insn_addr=4071c4
+unpin:pcrel:Converting 10a:jmp qword [6 + 0x6078ea] to jmp qword [6 + 0x200726] wrt no-object
+unpin:pcrel:new_disp=204549
+unpin:pcrel:new_insn_addr=4033a9
+unpin:pcrel:Converting 110:jmp qword [6 + 0x6078f2] to jmp qword [6 + 0x204549] wrt no-object
+unpin:pcrel:new_disp=6078fa
+unpin:pcrel:new_insn_addr=0
+unpin:pcrel:Converting 116:jmp qword [6 + 0x6078fa] to jmp qword [6 + 0x6078fa] wrt no-object
+unpin:pcrel:new_disp=20062e
+unpin:pcrel:new_insn_addr=4072d4
+unpin:pcrel:Converting 11c:jmp qword [6 + 0x607902] to jmp qword [6 + 0x20062e] wrt no-object
+unpin:pcrel:new_disp=2005e9
+unpin:pcrel:new_insn_addr=407321
+unpin:pcrel:Converting 122:jmp qword [6 + 0x60790a] to jmp qword [6 + 0x2005e9] wrt no-object
+unpin:pcrel:new_disp=2005e5
+unpin:pcrel:new_insn_addr=40732d
+unpin:pcrel:Converting 128:jmp qword [6 + 0x607912] to jmp qword [6 + 0x2005e5] wrt no-object
+unpin:pcrel:new_disp=204632
+unpin:pcrel:new_insn_addr=4032e8
+unpin:pcrel:Converting 12e:jmp qword [6 + 0x60791a] to jmp qword [6 + 0x204632] wrt no-object
+unpin:pcrel:new_disp=1ffcce
+unpin:pcrel:new_insn_addr=407c54
+unpin:pcrel:Converting 134:jmp qword [6 + 0x607922] to jmp qword [6 + 0x1ffcce] wrt no-object
+unpin:pcrel:new_disp=20079f
+unpin:pcrel:new_insn_addr=40718b
+unpin:pcrel:Converting 13a:jmp qword [6 + 0x60792a] to jmp qword [6 + 0x20079f] wrt no-object
+unpin:pcrel:new_disp=200043
+unpin:pcrel:new_insn_addr=4078ef
+unpin:pcrel:Converting 140:jmp qword [6 + 0x607932] to jmp qword [6 + 0x200043] wrt no-object
+unpin:pcrel:new_disp=204b22
+unpin:pcrel:new_insn_addr=402e18
+unpin:pcrel:Converting 146:jmp qword [6 + 0x60793a] to jmp qword [6 + 0x204b22] wrt no-object
+unpin:pcrel:new_disp=200662
+unpin:pcrel:new_insn_addr=4072e0
+unpin:pcrel:Converting 14c:jmp qword [6 + 0x607942] to jmp qword [6 + 0x200662] wrt no-object
+unpin:pcrel:new_disp=1ffd99
+unpin:pcrel:new_insn_addr=407bb1
+unpin:pcrel:Converting 152:jmp qword [6 + 0x60794a] to jmp qword [6 + 0x1ffd99] wrt no-object
+unpin:pcrel:new_disp=204801
+unpin:pcrel:new_insn_addr=403151
+unpin:pcrel:Converting 158:jmp qword [6 + 0x607952] to jmp qword [6 + 0x204801] wrt no-object
+unpin:pcrel:new_disp=204ddf
+unpin:pcrel:new_insn_addr=402b7b
+unpin:pcrel:Converting 15e:jmp qword [6 + 0x60795a] to jmp qword [6 + 0x204ddf] wrt no-object
+unpin:pcrel:new_disp=1ffea6
+unpin:pcrel:new_insn_addr=407abc
+unpin:pcrel:Converting 164:jmp qword [6 + 0x607962] to jmp qword [6 + 0x1ffea6] wrt no-object
+unpin:pcrel:new_disp=200419
+unpin:pcrel:new_insn_addr=407551
+unpin:pcrel:Converting 16a:jmp qword [6 + 0x60796a] to jmp qword [6 + 0x200419] wrt no-object
+unpin:pcrel:new_disp=200698
+unpin:pcrel:new_insn_addr=4072da
+unpin:pcrel:Converting 170:jmp qword [6 + 0x607972] to jmp qword [6 + 0x200698] wrt no-object
+unpin:pcrel:new_disp=204e9c
+unpin:pcrel:new_insn_addr=402ade
+unpin:pcrel:Converting 176:jmp qword [6 + 0x60797a] to jmp qword [6 + 0x204e9c] wrt no-object
+unpin:pcrel:new_disp=2045f3
+unpin:pcrel:new_insn_addr=40338f
+unpin:pcrel:Converting 17c:jmp qword [6 + 0x607982] to jmp qword [6 + 0x2045f3] wrt no-object
+unpin:pcrel:new_disp=1ffe75
+unpin:pcrel:new_insn_addr=407b15
+unpin:pcrel:Converting 182:jmp qword [6 + 0x60798a] to jmp qword [6 + 0x1ffe75] wrt no-object
+unpin:pcrel:new_disp=204dd6
+unpin:pcrel:new_insn_addr=402bbc
+unpin:pcrel:Converting 188:jmp qword [6 + 0x607992] to jmp qword [6 + 0x204dd6] wrt no-object
+unpin:pcrel:new_disp=200667
+unpin:pcrel:new_insn_addr=407333
+unpin:pcrel:Converting 18e:jmp qword [6 + 0x60799a] to jmp qword [6 + 0x200667] wrt no-object
+unpin:pcrel:new_disp=2044ff
+unpin:pcrel:new_insn_addr=4034a3
+unpin:pcrel:Converting 194:jmp qword [6 + 0x6079a2] to jmp qword [6 + 0x2044ff] wrt no-object
+unpin:pcrel:new_disp=1ffe4a
+unpin:pcrel:new_insn_addr=407b60
+unpin:pcrel:Converting 19a:jmp qword [6 + 0x6079aa] to jmp qword [6 + 0x1ffe4a] wrt no-object
+unpin:pcrel:new_disp=200309
+unpin:pcrel:new_insn_addr=4076a9
+unpin:pcrel:Converting 1a0:jmp qword [6 + 0x6079b2] to jmp qword [6 + 0x200309] wrt no-object
+unpin:pcrel:new_disp=2045f9
+unpin:pcrel:new_insn_addr=4033c1
+unpin:pcrel:Converting 1a6:jmp qword [6 + 0x6079ba] to jmp qword [6 + 0x2045f9] wrt no-object
+unpin:pcrel:new_disp=204ec0
+unpin:pcrel:new_insn_addr=402b02
+unpin:pcrel:Converting 1ac:jmp qword [6 + 0x6079c2] to jmp qword [6 + 0x204ec0] wrt no-object
+unpin:pcrel:new_disp=2006a3
+unpin:pcrel:new_insn_addr=407327
+unpin:pcrel:Converting 1b2:jmp qword [6 + 0x6079ca] to jmp qword [6 + 0x2006a3] wrt no-object
+unpin:pcrel:new_disp=2047d9
+unpin:pcrel:new_insn_addr=4031f9
+unpin:pcrel:Converting 1b8:jmp qword [6 + 0x6079d2] to jmp qword [6 + 0x2047d9] wrt no-object
+unpin:pcrel:new_disp=2002d8
+unpin:pcrel:new_insn_addr=407702
+unpin:pcrel:Converting 1be:jmp qword [6 + 0x6079da] to jmp qword [6 + 0x2002d8] wrt no-object
+unpin:pcrel:new_disp=20439f
+unpin:pcrel:new_insn_addr=403643
+unpin:pcrel:Converting 1c4:jmp qword [6 + 0x6079e2] to jmp qword [6 + 0x20439f] wrt no-object
+unpin:pcrel:new_disp=2043c5
+unpin:pcrel:new_insn_addr=403625
+unpin:pcrel:Converting 1ca:jmp qword [6 + 0x6079ea] to jmp qword [6 + 0x2043c5] wrt no-object
+unpin:pcrel:new_disp=20304c
+unpin:pcrel:new_insn_addr=404a05
+unpin:pcrel:Converting 234:cmp byte [7 + 0x607a51], 0 to cmp byte [7 + 0x20304c], 0 wrt no-object
+unpin:pcrel:new_disp=20094b
+unpin:pcrel:new_insn_addr=407106
+unpin:pcrel:Converting 240:mov byte [7 + 0x607a51], 1 to mov byte [7 + 0x20094b], 1 wrt no-object
+unpin:pcrel:new_disp=201439
+unpin:pcrel:new_insn_addr=40661d
+unpin:pcrel:Converting 4d8:mov dword [6 + 0x607a56], eax to mov dword [6 + 0x201439], eax wrt no-object
+unpin:pcrel:new_disp=607a49
+unpin:pcrel:new_insn_addr=0
+unpin:pcrel:Converting 68c:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x607a49] wrt no-object
+unpin:pcrel:new_disp=607a49
+unpin:pcrel:new_insn_addr=0
+unpin:pcrel:Converting 6be:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x607a49] wrt no-object
+unpin:pcrel:new_disp=202eed
+unpin:pcrel:new_insn_addr=404b5c
+unpin:pcrel:Converting 6fe:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x202eed] wrt no-object
+unpin:pcrel:new_disp=202ed7
+unpin:pcrel:new_insn_addr=404b72
+unpin:pcrel:Converting 706:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x202ed7] wrt no-object
+unpin:pcrel:new_disp=204608
+unpin:pcrel:new_insn_addr=403441
+unpin:pcrel:Converting 74c:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x204608] wrt no-object
+unpin:pcrel:new_disp=204d05
+unpin:pcrel:new_insn_addr=402e0d
+unpin:pcrel:Converting a74:call qword [6 + 0x607b12] to call qword [6 + 0x204d05] wrt no-object
+unpin:pcrel:new_disp=202eaa
+unpin:pcrel:new_insn_addr=404c38
+unpin:pcrel:Converting a7e:call qword [6 + 0x607ae2] to call qword [6 + 0x202eaa] wrt no-object
+unpin:pcrel:new_disp=215f4e
+unpin:pcrel:new_insn_addr=401e0c
+unpin:pcrel:Converting abc:mov eax, dword [6 + 0x617d5a] to mov eax, dword [6 + 0x215f4e] wrt no-object
+unpin:pcrel:new_disp=205ca3
+unpin:pcrel:new_insn_addr=401e1f
+unpin:pcrel:Converting ac4:call qword [6 + 0x607ac2] to call qword [6 + 0x205ca3] wrt no-object
+unpin:pcrel:new_disp=205c9d
+unpin:pcrel:new_insn_addr=401e35
+unpin:pcrel:Converting ace:call qword [6 + 0x607ad2] to call qword [6 + 0x205c9d] wrt no-object
+unpin:pcrel:new_disp=205d34
+unpin:pcrel:new_insn_addr=401e3e
+unpin:pcrel:Converting ad2:call qword [6 + 0x607b72] to call qword [6 + 0x205d34] wrt no-object
+unpin:pcrel:new_disp=205c0c
+unpin:pcrel:new_insn_addr=401e4e
+unpin:pcrel:Converting adc:call qword [6 + 0x607a5a] to call qword [6 + 0x205c0c] wrt no-object
+unpin:pcrel:new_disp=205bfc
+unpin:pcrel:new_insn_addr=401e66
+unpin:pcrel:Converting ae8:call qword [6 + 0x607a62] to call qword [6 + 0x205bfc] wrt no-object
+unpin:pcrel:new_disp=2005e7
+unpin:pcrel:new_insn_addr=4074ab
+unpin:pcrel:Converting af6:call qword [6 + 0x607a92] to call qword [6 + 0x2005e7] wrt no-object
+unpin:pcrel:new_disp=2011f7
+unpin:pcrel:new_insn_addr=406923
+unpin:pcrel:Converting b20:call qword [6 + 0x607b1a] to call qword [6 + 0x2011f7] wrt no-object
+unpin:pcrel:new_disp=200652
+unpin:pcrel:new_insn_addr=4074c8
+unpin:pcrel:Converting b26:call qword [6 + 0x607b1a] to call qword [6 + 0x200652] wrt no-object
+unpin:pcrel:new_disp=607b12
+unpin:pcrel:new_insn_addr=0
+unpin:pcrel:Converting b54:call qword [6 + 0x607b12] to call qword [6 + 0x607b12] wrt no-object
+unpin:pcrel:new_disp=2062c3
+unpin:pcrel:new_insn_addr=40181f
+unpin:pcrel:Converting b5c:call qword [6 + 0x607ae2] to call qword [6 + 0x2062c3] wrt no-object
+unpin:pcrel:new_disp=206307
+unpin:pcrel:new_insn_addr=40182b
+unpin:pcrel:Converting b62:call qword [6 + 0x607b32] to call qword [6 + 0x206307] wrt no-object
+unpin:pcrel:new_disp=206293
+unpin:pcrel:new_insn_addr=401847
+unpin:pcrel:Converting b70:call qword [6 + 0x607ada] to call qword [6 + 0x206293] wrt no-object
+unpin:pcrel:new_disp=2062d1
+unpin:pcrel:new_insn_addr=401859
+unpin:pcrel:Converting b78:call qword [6 + 0x607b2a] to call qword [6 + 0x2062d1] wrt no-object
+unpin:pcrel:new_disp=206288
+unpin:pcrel:new_insn_addr=401862
+unpin:pcrel:Converting b7c:call qword [6 + 0x607aea] to call qword [6 + 0x206288] wrt no-object
+unpin:pcrel:new_disp=2062b0
+unpin:pcrel:new_insn_addr=401872
+unpin:pcrel:Converting b82:call qword [6 + 0x607b22] to call qword [6 + 0x2062b0] wrt no-object
+unpin:pcrel:new_disp=2062ee
+unpin:pcrel:new_insn_addr=401884
+unpin:pcrel:Converting b8a:call qword [6 + 0x607b72] to call qword [6 + 0x2062ee] wrt no-object
+unpin:pcrel:new_disp=2062e5
+unpin:pcrel:new_insn_addr=40188d
+unpin:pcrel:Converting b8e:call qword [6 + 0x607b72] to call qword [6 + 0x2062e5] wrt no-object
+unpin:pcrel:new_disp=206287
+unpin:pcrel:new_insn_addr=401893
+unpin:pcrel:Converting b90:call qword [6 + 0x607b1a] to call qword [6 + 0x206287] wrt no-object
+unpin:pcrel:new_disp=206291
+unpin:pcrel:new_insn_addr=401899
+unpin:pcrel:Converting b92:call qword [6 + 0x607b2a] to call qword [6 + 0x206291] wrt no-object
+unpin:pcrel:new_disp=204def
+unpin:pcrel:new_insn_addr=402d83
+unpin:pcrel:Converting ba4:call qword [6 + 0x607b72] to call qword [6 + 0x204def] wrt no-object
+unpin:pcrel:new_disp=2062c1
+unpin:pcrel:new_insn_addr=4018b1
+unpin:pcrel:Converting ba8:call qword [6 + 0x607b72] to call qword [6 + 0x2062c1] wrt no-object
+unpin:pcrel:new_disp=206273
+unpin:pcrel:new_insn_addr=4018b7
+unpin:pcrel:Converting baa:call qword [6 + 0x607b2a] to call qword [6 + 0x206273] wrt no-object
+unpin:pcrel:new_disp=20123c
+unpin:pcrel:new_insn_addr=406975
+unpin:pcrel:Converting bfc:mov rax, qword [7 + 0x607bb1] to mov rax, qword [7 + 0x20123c] wrt no-object
+unpin:pcrel:new_disp=202f10
+unpin:pcrel:new_insn_addr=404ca1
+unpin:pcrel:Converting c3c:mov rdx, qword [7 + 0x607bb1] to mov rdx, qword [7 + 0x202f10] wrt no-object
+unpin:pcrel:new_disp=205c8d
+unpin:pcrel:new_insn_addr=401f2c
+unpin:pcrel:Converting fb8:mov qword [7 + 0x607bb9], rax to mov qword [7 + 0x205c8d], rax wrt no-object
+unpin:pcrel:new_disp=205c68
+unpin:pcrel:new_insn_addr=401f49
+unpin:pcrel:Converting fc4:mov qword [7 + 0x607bb1], rax to mov qword [7 + 0x205c68], rax wrt no-object
+unpin:pcrel:new_disp=205c43
+unpin:pcrel:new_insn_addr=401f66
+unpin:pcrel:Converting fd0:mov qword [7 + 0x607ba9], rax to mov qword [7 + 0x205c43], rax wrt no-object
+unpin:pcrel:new_disp=205c1e
+unpin:pcrel:new_insn_addr=401f83
+unpin:pcrel:Converting fdc:mov qword [7 + 0x607ba1], rax to mov qword [7 + 0x205c1e], rax wrt no-object
+unpin:pcrel:new_disp=205bf9
+unpin:pcrel:new_insn_addr=401fa0
+unpin:pcrel:Converting fe8:mov qword [7 + 0x607b99], rax to mov qword [7 + 0x205bf9], rax wrt no-object
+unpin:pcrel:new_disp=205bd4
+unpin:pcrel:new_insn_addr=401fbd
+unpin:pcrel:Converting ff4:mov qword [7 + 0x607b91], rax to mov qword [7 + 0x205bd4], rax wrt no-object
+unpin:pcrel:new_disp=205baf
+unpin:pcrel:new_insn_addr=401fda
+unpin:pcrel:Converting 1000:mov qword [7 + 0x607b89], rax to mov qword [7 + 0x205baf], rax wrt no-object
+unpin:pcrel:new_disp=205b8a
+unpin:pcrel:new_insn_addr=401ff7
+unpin:pcrel:Converting 100c:mov qword [7 + 0x607b81], rax to mov qword [7 + 0x205b8a], rax wrt no-object
+unpin:pcrel:new_disp=205b65
+unpin:pcrel:new_insn_addr=402014
+unpin:pcrel:Converting 1018:mov qword [7 + 0x607b79], rax to mov qword [7 + 0x205b65], rax wrt no-object
+unpin:pcrel:new_disp=205b40
+unpin:pcrel:new_insn_addr=402031
+unpin:pcrel:Converting 1024:mov qword [7 + 0x607b71], rax to mov qword [7 + 0x205b40], rax wrt no-object
+unpin:pcrel:new_disp=205b1b
+unpin:pcrel:new_insn_addr=40204e
+unpin:pcrel:Converting 1030:mov qword [7 + 0x607b69], rax to mov qword [7 + 0x205b1b], rax wrt no-object
+unpin:pcrel:new_disp=205af6
+unpin:pcrel:new_insn_addr=40206b
+unpin:pcrel:Converting 103c:mov qword [7 + 0x607b61], rax to mov qword [7 + 0x205af6], rax wrt no-object
+unpin:pcrel:new_disp=205ad1
+unpin:pcrel:new_insn_addr=402088
+unpin:pcrel:Converting 1048:mov qword [7 + 0x607b59], rax to mov qword [7 + 0x205ad1], rax wrt no-object
+unpin:pcrel:new_disp=205a93
+unpin:pcrel:new_insn_addr=4020ae
+unpin:pcrel:Converting 1058:mov qword [7 + 0x607b41], rax to mov qword [7 + 0x205a93], rax wrt no-object
+unpin:pcrel:new_disp=205a6e
+unpin:pcrel:new_insn_addr=4020cb
+unpin:pcrel:Converting 1064:mov qword [7 + 0x607b39], rax to mov qword [7 + 0x205a6e], rax wrt no-object
+unpin:pcrel:new_disp=205a49
+unpin:pcrel:new_insn_addr=4020e8
+unpin:pcrel:Converting 1070:mov qword [7 + 0x607b31], rax to mov qword [7 + 0x205a49], rax wrt no-object
+unpin:pcrel:new_disp=205a24
+unpin:pcrel:new_insn_addr=402105
+unpin:pcrel:Converting 107c:mov qword [7 + 0x607b29], rax to mov qword [7 + 0x205a24], rax wrt no-object
+unpin:pcrel:new_disp=2059ff
+unpin:pcrel:new_insn_addr=402122
+unpin:pcrel:Converting 1088:mov qword [7 + 0x607b21], rax to mov qword [7 + 0x2059ff], rax wrt no-object
+unpin:pcrel:new_disp=2059da
+unpin:pcrel:new_insn_addr=40213f
+unpin:pcrel:Converting 1094:mov qword [7 + 0x607b19], rax to mov qword [7 + 0x2059da], rax wrt no-object
+unpin:pcrel:new_disp=2059b5
+unpin:pcrel:new_insn_addr=40215c
+unpin:pcrel:Converting 10a0:mov qword [7 + 0x607b11], rax to mov qword [7 + 0x2059b5], rax wrt no-object
+unpin:pcrel:new_disp=205990
+unpin:pcrel:new_insn_addr=402179
+unpin:pcrel:Converting 10ac:mov qword [7 + 0x607b09], rax to mov qword [7 + 0x205990], rax wrt no-object
+unpin:pcrel:new_disp=20596b
+unpin:pcrel:new_insn_addr=402196
+unpin:pcrel:Converting 10b8:mov qword [7 + 0x607b01], rax to mov qword [7 + 0x20596b], rax wrt no-object
+unpin:pcrel:new_disp=205946
+unpin:pcrel:new_insn_addr=4021b3
+unpin:pcrel:Converting 10c4:mov qword [7 + 0x607af9], rax to mov qword [7 + 0x205946], rax wrt no-object
+unpin:pcrel:new_disp=205921
+unpin:pcrel:new_insn_addr=4021d0
+unpin:pcrel:Converting 10d0:mov qword [7 + 0x607af1], rax to mov qword [7 + 0x205921], rax wrt no-object
+unpin:pcrel:new_disp=2058fc
+unpin:pcrel:new_insn_addr=4021ed
+unpin:pcrel:Converting 10dc:mov qword [7 + 0x607ae9], rax to mov qword [7 + 0x2058fc], rax wrt no-object
+unpin:pcrel:new_disp=2058d7
+unpin:pcrel:new_insn_addr=40220a
+unpin:pcrel:Converting 10e8:mov qword [7 + 0x607ae1], rax to mov qword [7 + 0x2058d7], rax wrt no-object
+unpin:pcrel:new_disp=2058b2
+unpin:pcrel:new_insn_addr=402227
+unpin:pcrel:Converting 10f4:mov qword [7 + 0x607ad9], rax to mov qword [7 + 0x2058b2], rax wrt no-object
+unpin:pcrel:new_disp=20588d
+unpin:pcrel:new_insn_addr=402244
+unpin:pcrel:Converting 1100:mov qword [7 + 0x607ad1], rax to mov qword [7 + 0x20588d], rax wrt no-object
+unpin:pcrel:new_disp=205868
+unpin:pcrel:new_insn_addr=402261
+unpin:pcrel:Converting 110c:mov qword [7 + 0x607ac9], rax to mov qword [7 + 0x205868], rax wrt no-object
+unpin:pcrel:new_disp=205832
+unpin:pcrel:new_insn_addr=402287
+unpin:pcrel:Converting 111c:mov qword [7 + 0x607ab9], rax to mov qword [7 + 0x205832], rax wrt no-object
+unpin:pcrel:new_disp=20580d
+unpin:pcrel:new_insn_addr=4022a4
+unpin:pcrel:Converting 1128:mov qword [7 + 0x607ab1], rax to mov qword [7 + 0x20580d], rax wrt no-object
+unpin:pcrel:new_disp=2057e8
+unpin:pcrel:new_insn_addr=4022c1
+unpin:pcrel:Converting 1134:mov qword [7 + 0x607aa9], rax to mov qword [7 + 0x2057e8], rax wrt no-object
+unpin:pcrel:new_disp=2057c3
+unpin:pcrel:new_insn_addr=4022de
+unpin:pcrel:Converting 1140:mov qword [7 + 0x607aa1], rax to mov qword [7 + 0x2057c3], rax wrt no-object
+unpin:pcrel:new_disp=20579e
+unpin:pcrel:new_insn_addr=4022fb
+unpin:pcrel:Converting 114c:mov qword [7 + 0x607a99], rax to mov qword [7 + 0x20579e], rax wrt no-object
+unpin:pcrel:new_disp=205749
+unpin:pcrel:new_insn_addr=402318
+unpin:pcrel:Converting 1158:mov qword [7 + 0x607a61], rax to mov qword [7 + 0x205749], rax wrt no-object
+unpin:pcrel:new_disp=205724
+unpin:pcrel:new_insn_addr=402335
+unpin:pcrel:Converting 1164:mov qword [7 + 0x607a59], rax to mov qword [7 + 0x205724], rax wrt no-object
+unpin:pcrel:new_disp=2057f3
+unpin:pcrel:new_insn_addr=40235e
+unpin:pcrel:Converting 117e:mov qword [7 + 0x607b51], rax to mov qword [7 + 0x2057f3], rax wrt no-object
+unpin:pcrel:new_disp=2057ce
+unpin:pcrel:new_insn_addr=40237b
+unpin:pcrel:Converting 118a:mov qword [7 + 0x607b49], rax to mov qword [7 + 0x2057ce], rax wrt no-object
+unpin:pcrel:new_disp=202db9
+unpin:pcrel:new_insn_addr=404d08
+unpin:pcrel:Converting 11a0:mov qword [7 + 0x607ac1], rax to mov qword [7 + 0x202db9], rax wrt no-object
+unpin:pcrel:new_disp=202d5c
+unpin:pcrel:new_insn_addr=404d25
+unpin:pcrel:Converting 11ac:mov qword [7 + 0x607a81], rax to mov qword [7 + 0x202d5c], rax wrt no-object
+unpin:pcrel:new_disp=206060
+unpin:pcrel:new_insn_addr=401a31
+unpin:pcrel:Converting 11c2:mov qword [7 + 0x607a91], rax to mov qword [7 + 0x206060], rax wrt no-object
+unpin:pcrel:new_disp=206032
+unpin:pcrel:new_insn_addr=401a57
+unpin:pcrel:Converting 11d2:mov qword [7 + 0x607a89], rax to mov qword [7 + 0x206032], rax wrt no-object
+unpin:pcrel:new_disp=200e97
+unpin:pcrel:new_insn_addr=406be2
+unpin:pcrel:Converting 11de:mov qword [7 + 0x607a79], rax to mov qword [7 + 0x200e97], rax wrt no-object
+unpin:pcrel:new_disp=200e6a
+unpin:pcrel:new_insn_addr=406bff
+unpin:pcrel:Converting 11ea:mov qword [7 + 0x607a69], rax to mov qword [7 + 0x200e6a], rax wrt no-object
+unpin:pcrel:new_disp=200e4c
+unpin:pcrel:new_insn_addr=406c25
+unpin:pcrel:Converting 11fa:mov qword [7 + 0x607a71], rax to mov qword [7 + 0x200e4c], rax wrt no-object
+unpin:pcrel:new_disp=202d40
+unpin:pcrel:new_insn_addr=404d49
+unpin:pcrel:Converting 1210:mov qword [7 + 0x607a89], rax to mov qword [7 + 0x202d40], rax wrt no-object
+unpin:pcrel:new_disp=204949
+unpin:pcrel:new_insn_addr=4031f0
+unpin:pcrel:Converting 1374:mov rax, qword [7 + 0x607b39] to mov rax, qword [7 + 0x204949] wrt no-object
+unpin:pcrel:new_disp=2001d7
+unpin:pcrel:new_insn_addr=40796a
+unpin:pcrel:Converting 137a:mov rax, qword [7 + 0x607b41] to mov rax, qword [7 + 0x2001d7] wrt no-object
+unpin:pcrel:new_disp=2000e9
+unpin:pcrel:new_insn_addr=4079b0
+unpin:pcrel:Converting 1380:mov rax, qword [7 + 0x607a99] to mov rax, qword [7 + 0x2000e9] wrt no-object
+unpin:pcrel:new_disp=204486
+unpin:pcrel:new_insn_addr=40362b
+unpin:pcrel:Converting 1386:mov rax, qword [7 + 0x607ab1] to mov rax, qword [7 + 0x204486] wrt no-object
+unpin:pcrel:new_disp=2044a8
+unpin:pcrel:new_insn_addr=403611
+unpin:pcrel:Converting 138c:mov rax, qword [7 + 0x607ab9] to mov rax, qword [7 + 0x2044a8] wrt no-object
+unpin:pcrel:new_disp=204a26
+unpin:pcrel:new_insn_addr=403173
+unpin:pcrel:Converting 13a2:mov rax, qword [7 + 0x607b99] to mov rax, qword [7 + 0x204a26] wrt no-object
+unpin:pcrel:new_disp=204a21
+unpin:pcrel:new_insn_addr=403188
+unpin:pcrel:Converting 13aa:mov rax, qword [7 + 0x607ba9] to mov rax, qword [7 + 0x204a21] wrt no-object
+unpin:pcrel:new_disp=204a24
+unpin:pcrel:new_insn_addr=403195
+unpin:pcrel:Converting 13ae:mov rax, qword [7 + 0x607bb9] to mov rax, qword [7 + 0x204a24] wrt no-object
+unpin:pcrel:new_disp=2049ef
+unpin:pcrel:new_insn_addr=4031a2
+unpin:pcrel:Converting 13b2:mov rax, qword [7 + 0x607b91] to mov rax, qword [7 + 0x2049ef] wrt no-object
+unpin:pcrel:new_disp=2049f2
+unpin:pcrel:new_insn_addr=4031af
+unpin:pcrel:Converting 13b6:mov rax, qword [7 + 0x607ba1] to mov rax, qword [7 + 0x2049f2] wrt no-object
+unpin:pcrel:new_disp=2049c5
+unpin:pcrel:new_insn_addr=4031bc
+unpin:pcrel:Converting 13ba:mov rax, qword [7 + 0x607b81] to mov rax, qword [7 + 0x2049c5] wrt no-object
+unpin:pcrel:new_disp=2002a7
+unpin:pcrel:new_insn_addr=4078da
+unpin:pcrel:Converting 13cc:mov rax, qword [7 + 0x607b81] to mov rax, qword [7 + 0x2002a7] wrt no-object
+unpin:pcrel:new_disp=202d64
+unpin:pcrel:new_insn_addr=404e25
+unpin:pcrel:Converting 13f8:mov rax, qword [7 + 0x607b89] to mov rax, qword [7 + 0x202d64] wrt no-object
+unpin:pcrel:new_disp=2104ac
+unpin:pcrel:new_insn_addr=4078ae
+unpin:pcrel:Converting 1406:mov eax, dword [6 + 0x617d5a] to mov eax, dword [6 + 0x2104ac] wrt no-object
+unpin:pcrel:new_disp=20019c
+unpin:pcrel:new_insn_addr=40789d
+unpin:pcrel:Converting 1418:mov rdi, qword [7 + 0x607a39] to mov rdi, qword [7 + 0x20019c] wrt no-object
+unpin:pcrel:new_disp=200d5b
+unpin:pcrel:new_insn_addr=406cee
+unpin:pcrel:Converting 141c:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x200d5b] wrt no-object
+unpin:pcrel:new_disp=200d47
+unpin:pcrel:new_insn_addr=406cfa
+unpin:pcrel:Converting 1420:mov rdi, qword [7 + 0x607a41] to mov rdi, qword [7 + 0x200d47] wrt no-object
+unpin:pcrel:new_disp=200d31
+unpin:pcrel:new_insn_addr=406d08
+unpin:pcrel:Converting 1426:mov rdi, qword [7 + 0x607a39] to mov rdi, qword [7 + 0x200d31] wrt no-object
+unpin:pcrel:new_disp=200d33
+unpin:pcrel:new_insn_addr=406d16
+unpin:pcrel:Converting 142c:mov rdi, qword [7 + 0x607a49] to mov rdi, qword [7 + 0x200d33] wrt no-object
+unpin:pcrel:new_disp=202c6e
+unpin:pcrel:new_insn_addr=404e4c
+unpin:pcrel:Converting 1456:call qword [6 + 0x607aba] to call qword [6 + 0x202c6e] wrt no-object
+unpin:pcrel:new_disp=204529
+unpin:pcrel:new_insn_addr=40352d
+unpin:pcrel:Converting 1472:mov eax, dword [6 + 0x607a56] to mov eax, dword [6 + 0x204529] wrt no-object
+unpin:pcrel:new_disp=214818
+unpin:pcrel:new_insn_addr=403542
+unpin:pcrel:Converting 147e:mov dword [6 + 0x617d5a], eax to mov dword [6 + 0x214818], eax wrt no-object
+unpin:pcrel:new_disp=200ce7
+unpin:pcrel:new_insn_addr=406d6f
+unpin:pcrel:Converting 1496:mov esi, dword [6 + 0x607a56] to mov esi, dword [6 + 0x200ce7] wrt no-object
+unpin:pcrel:new_disp=200138
+unpin:pcrel:new_insn_addr=407952
+unpin:pcrel:Converting 1542:call qword [6 + 0x607a8a] to call qword [6 + 0x200138] wrt no-object
+unpin:pcrel:new_disp=212e4d
+unpin:pcrel:new_insn_addr=404f04
+unpin:pcrel:Converting 15b4:mov qword [7 + 0x617d51], rax to mov qword [7 + 0x212e4d], rax wrt no-object
+unpin:pcrel:new_disp=202b72
+unpin:pcrel:new_insn_addr=404f18
+unpin:pcrel:Converting 15bc:call qword [6 + 0x607a8a] to call qword [6 + 0x202b72] wrt no-object
+unpin:pcrel:new_disp=212e33
+unpin:pcrel:new_insn_addr=404f1e
+unpin:pcrel:Converting 15be:mov rsi, qword [7 + 0x617d51] to mov rsi, qword [7 + 0x212e33] wrt no-object
+unpin:pcrel:new_disp=214fb2
+unpin:pcrel:new_insn_addr=402da7
+unpin:pcrel:Converting 15f4:mov r10d, dword [7 + 0x617d59] to mov r10d, dword [7 + 0x214fb2] wrt no-object
+unpin:pcrel:new_disp=212dee
+unpin:pcrel:new_insn_addr=404f6b
+unpin:pcrel:Converting 1602:mov r9d, dword [7 + 0x617d59] to mov r9d, dword [7 + 0x212dee] wrt no-object
+unpin:pcrel:new_disp=202b98
+unpin:pcrel:new_insn_addr=404fa2
+unpin:pcrel:Converting 1618:call qword [6 + 0x607b3a] to call qword [6 + 0x202b98] wrt no-object
+unpin:pcrel:new_disp=212db1
+unpin:pcrel:new_insn_addr=404fa8
+unpin:pcrel:Converting 161a:mov r8d, dword [7 + 0x617d59] to mov r8d, dword [7 + 0x212db1] wrt no-object
+unpin:pcrel:new_disp=202b7d
+unpin:pcrel:new_insn_addr=404fdd
+unpin:pcrel:Converting 1632:call qword [6 + 0x607b5a] to call qword [6 + 0x202b7d] wrt no-object
+unpin:pcrel:new_disp=212d77
+unpin:pcrel:new_insn_addr=404fe3
+unpin:pcrel:Converting 1634:mov edx, dword [6 + 0x617d5a] to mov edx, dword [6 + 0x212d77] wrt no-object
+unpin:pcrel:new_disp=212d5f
+unpin:pcrel:new_insn_addr=404ffb
+unpin:pcrel:Converting 163e:mov eax, dword [6 + 0x617d5a] to mov eax, dword [6 + 0x212d5f] wrt no-object
+unpin:pcrel:new_disp=202a80
+unpin:pcrel:new_insn_addr=405032
+unpin:pcrel:Converting 1656:call qword [6 + 0x607ab2] to call qword [6 + 0x202a80] wrt no-object
+unpin:pcrel:new_disp=202ae2
+unpin:pcrel:new_insn_addr=405040
+unpin:pcrel:Converting 165c:call qword [6 + 0x607b22] to call qword [6 + 0x202ae2] wrt no-object
+unpin:pcrel:new_disp=202ad7
+unpin:pcrel:new_insn_addr=40506b
+unpin:pcrel:Converting 1676:call qword [6 + 0x607b42] to call qword [6 + 0x202ad7] wrt no-object
+unpin:pcrel:new_disp=210f5b
+unpin:pcrel:new_insn_addr=406dfe
+unpin:pcrel:Converting 1688:mov r8d, dword [7 + 0x617d59] to mov r8d, dword [7 + 0x210f5b] wrt no-object
+unpin:pcrel:new_disp=200c67
+unpin:pcrel:new_insn_addr=406eeb
+unpin:pcrel:Converting 16ee:call qword [6 + 0x607b52] to call qword [6 + 0x200c67] wrt no-object
+unpin:pcrel:new_disp=2048c1
+unpin:pcrel:new_insn_addr=4031d9
+unpin:pcrel:Converting 16f6:call qword [6 + 0x607a9a] to call qword [6 + 0x2048c1] wrt no-object
+unpin:pcrel:new_disp=200590
+unpin:pcrel:new_insn_addr=407532
+unpin:pcrel:Converting 1744:call qword [6 + 0x607ac2] to call qword [6 + 0x200590] wrt no-object
+unpin:pcrel:new_disp=202a0c
+unpin:pcrel:new_insn_addr=405096
+unpin:pcrel:Converting 174e:call qword [6 + 0x607aa2] to call qword [6 + 0x202a0c] wrt no-object
+unpin:pcrel:new_disp=202a61
+unpin:pcrel:new_insn_addr=4050a1
+unpin:pcrel:Converting 1752:call qword [6 + 0x607b02] to call qword [6 + 0x202a61] wrt no-object
+unpin:pcrel:new_disp=202a38
+unpin:pcrel:new_insn_addr=4050aa
+unpin:pcrel:Converting 1756:call qword [6 + 0x607ae2] to call qword [6 + 0x202a38] wrt no-object
+unpin:pcrel:new_disp=202a7a
+unpin:pcrel:new_insn_addr=4050b8
+unpin:pcrel:Converting 175c:call qword [6 + 0x607b32] to call qword [6 + 0x202a7a] wrt no-object
+unpin:pcrel:new_disp=210e16
+unpin:pcrel:new_insn_addr=406f44
+unpin:pcrel:Converting 1786:mov eax, dword [6 + 0x617d5a] to mov eax, dword [6 + 0x210e16] wrt no-object
+unpin:pcrel:new_disp=200afe
+unpin:pcrel:new_insn_addr=406f57
+unpin:pcrel:Converting 1790:cmp dword [7 + 0x607a55], 0x24 to cmp dword [7 + 0x200afe], 0x24 wrt no-object
+unpin:pcrel:new_disp=200b64
+unpin:pcrel:new_insn_addr=406f76
+unpin:pcrel:Converting 179e:call qword [6 + 0x607ada] to call qword [6 + 0x200b64] wrt no-object
+unpin:pcrel:new_disp=200b7b
+unpin:pcrel:new_insn_addr=406f8f
+unpin:pcrel:Converting 17aa:call qword [6 + 0x607b0a] to call qword [6 + 0x200b7b] wrt no-object
+unpin:pcrel:new_disp=200b84
+unpin:pcrel:new_insn_addr=406f9e
+unpin:pcrel:Converting 17b0:call qword [6 + 0x607b22] to call qword [6 + 0x200b84] wrt no-object
+unpin:pcrel:new_disp=200b6d
+unpin:pcrel:new_insn_addr=406fad
+unpin:pcrel:Converting 17b6:call qword [6 + 0x607b1a] to call qword [6 + 0x200b6d] wrt no-object
+unpin:pcrel:new_disp=200b77
+unpin:pcrel:new_insn_addr=406fb3
+unpin:pcrel:Converting 17b8:call qword [6 + 0x607b2a] to call qword [6 + 0x200b77] wrt no-object
+unpin:pcrel:new_disp=2000a0
+unpin:pcrel:new_insn_addr=407a3a
+unpin:pcrel:Converting 17ce:call qword [6 + 0x607ada] to call qword [6 + 0x2000a0] wrt no-object
+unpin:pcrel:new_disp=2048ab
+unpin:pcrel:new_insn_addr=40322f
+unpin:pcrel:Converting 17fa:call qword [6 + 0x607ada] to call qword [6 + 0x2048ab] wrt no-object
+unpin:pcrel:new_disp=2045ec
+unpin:pcrel:new_insn_addr=403486
+unpin:pcrel:Converting 1800:call qword [6 + 0x607a72] to call qword [6 + 0x2045ec] wrt no-object
+unpin:pcrel:new_disp=214b01
+unpin:pcrel:new_insn_addr=403259
+unpin:pcrel:Converting 1816:mov eax, dword [6 + 0x617d5a] to mov eax, dword [6 + 0x214b01] wrt no-object
+unpin:pcrel:new_disp=204809
+unpin:pcrel:new_insn_addr=403279
+unpin:pcrel:Converting 1828:call qword [6 + 0x607a82] to call qword [6 + 0x204809] wrt no-object
+unpin:pcrel:new_disp=2029c9
+unpin:pcrel:new_insn_addr=4050e1
+unpin:pcrel:Converting 182e:call qword [6 + 0x607aaa] to call qword [6 + 0x2029c9] wrt no-object
+unpin:pcrel:new_disp=202a04
+unpin:pcrel:new_insn_addr=4050f6
+unpin:pcrel:Converting 1838:call qword [6 + 0x607afa] to call qword [6 + 0x202a04] wrt no-object
+unpin:pcrel:new_disp=20443a
+unpin:pcrel:new_insn_addr=403638
+unpin:pcrel:Converting 184e:call qword [6 + 0x607a72] to call qword [6 + 0x20443a] wrt no-object
+unpin:pcrel:new_disp=202955
+unpin:pcrel:new_insn_addr=405125
+unpin:pcrel:Converting 185a:call qword [6 + 0x607a7a] to call qword [6 + 0x202955] wrt no-object
+unpin:pcrel:new_disp=202a41
+unpin:pcrel:new_insn_addr=405131
+unpin:pcrel:Converting 1860:call qword [6 + 0x607b72] to call qword [6 + 0x202a41] wrt no-object
+unpin:pcrel:new_disp=205701
+unpin:pcrel:new_insn_addr=402471
+unpin:pcrel:Converting 187a:call qword [6 + 0x607b72] to call qword [6 + 0x205701] wrt no-object
+unpin:pcrel:new_disp=1ffe6b
+unpin:pcrel:new_insn_addr=407cfe
+unpin:pcrel:Converting 18c2:mov rax, qword [7 + 0x607b69] to mov rax, qword [7 + 0x1ffe6b] wrt no-object
+unpin:pcrel:new_disp=21539b
+unpin:pcrel:new_insn_addr=4029a7
+unpin:pcrel:Converting 18ce:mov edi, dword [6 + 0x617d42] to mov edi, dword [6 + 0x21539b] wrt no-object
+unpin:pcrel:new_disp=2155ac
+unpin:pcrel:new_insn_addr=40279d
+unpin:pcrel:Converting 1d62:mov qword [7 + 0x617d49], rax to mov qword [7 + 0x2155ac], rax wrt no-object
+unpin:pcrel:new_disp=21559e
+unpin:pcrel:new_insn_addr=4027a4
+unpin:pcrel:Converting 1d64:mov dword [10 + 0x617d42], 0 to mov dword [10 + 0x21559e], 0 wrt no-object
+unpin:pcrel:new_disp=21557b
+unpin:pcrel:new_insn_addr=4027cb
+unpin:pcrel:Converting 1d74:mov dword [6 + 0x617d46], eax to mov dword [6 + 0x21557b], eax wrt no-object
+unpin:pcrel:new_disp=21553e
+unpin:pcrel:new_insn_addr=402804
+unpin:pcrel:Converting 1d8e:mov dword [6 + 0x617d42], ebx to mov dword [6 + 0x21553e], ebx wrt no-object
+unpin:pcrel:new_disp=21550c
+unpin:pcrel:new_insn_addr=402836
+unpin:pcrel:Converting 1db4:mov edi, dword [6 + 0x617d42] to mov edi, dword [6 + 0x21550c] wrt no-object
+unpin:pcrel:new_disp=2154dc
+unpin:pcrel:new_insn_addr=402869
+unpin:pcrel:Converting 1dce:mov r12d, dword [7 + 0x617d45] to mov r12d, dword [7 + 0x2154dc] wrt no-object
+unpin:pcrel:new_disp=2154d9
+unpin:pcrel:new_insn_addr=402870
+unpin:pcrel:Converting 1dd0:mov rbp, qword [7 + 0x617d49] to mov rbp, qword [7 + 0x2154d9] wrt no-object
+unpin:pcrel:new_disp=215461
+unpin:pcrel:new_insn_addr=4028e8
+unpin:pcrel:Converting 1e14:mov rbp, qword [7 + 0x617d49] to mov rbp, qword [7 + 0x215461] wrt no-object
+unpin:pcrel:new_disp=215443
+unpin:pcrel:new_insn_addr=402902
+unpin:pcrel:Converting 1e20:mov r12d, dword [7 + 0x617d45] to mov r12d, dword [7 + 0x215443] wrt no-object
+unpin:pcrel:new_disp=2149e9
+unpin:pcrel:new_insn_addr=403360
+unpin:pcrel:Converting 1e34:mov rbp, qword [7 + 0x617d49] to mov rbp, qword [7 + 0x2149e9] wrt no-object
+unpin:pcrel:new_disp=200452
+unpin:pcrel:new_insn_addr=407127
+unpin:pcrel:Converting 1e4a:lea r12, [7 + 0x607579] to lea r12, [7 + 0x200452] wrt no-object
+unpin:pcrel:new_disp=200452
+unpin:pcrel:new_insn_addr=40712f
+unpin:pcrel:Converting 1e4e:lea rbp, [7 + 0x607581] to lea rbp, [7 + 0x200452] wrt no-object
+unpin:pcrel:new_disp=210848
+unpin:pcrel:new_insn_addr=407512
+unpin:pcrel:Converting 2483:mov edx, dword [6 + 0x617d5a] to mov edx, dword [6 + 0x210848] wrt no-object
+Updating a scoop named .text
+Updating a scoop named zipr_scoop_4220320
+# ATTRIBUTE ExceptionHandlerWrite::fdes_calculated=489
+# ATTRIBUTE ExceptionHandlerWrite::cies_calculated=2
+# ATTRIBUTE ExceptionHandlerWrite::insns_with_eh_info=3714
+# ATTRIBUTE ExceptionHandlerWrite::avg_insns_per_fde=7.59509
+Running: $PEASOUP_HOME/tools/eh_frame_tools/eh_to_bin.sh ehframe.s 0x618000 ehframe.exe
+Found segment 400000-400fff, perms=4, memsz=1000, filesz=1000
+Found segment 401000-407fff, perms=5, memsz=7000, filesz=7000
+Found segment 607000-617fff, perms=6, memsz=11000, filesz=1000
+Found segment 618000-61ffff, perms=4, memsz=8000, filesz=8000
+Assigning phdr to address 407d3c
+Assigning first seg to a file offset that's at least: 0
+Assigning load[0].ph_offset=0
+Assigning load[1].ph_offset=1000
+Assigning load[2].ph_offset=9000
+Assigning load[3].ph_offset=a000
+New phdrs at: 407d3c
+ElfWriter Success with GapAllocate
+phdr[1] writing at:0
+phdr[2] writing at:1000
+phdr[3] writing at:9000
+phdr[4] writing at:a000
+Writing segment headers at 7d3c, size=230
+Setting ent-size for .init_array to 0
+Setting ent-size for .fini_array to 0
+Setting ent-size for .dynstr to 0
+Setting ent-size for .gnu.version to 2
+Setting ent-size for .dynamic to 16
+Setting ent-size for .rela.plt to 24
+Setting ent-size for .note.ABI-tag to 0
+Setting ent-size for .note.gnu.build-id to 0
+Setting ent-size for .gnu.hash to 0
+Setting ent-size for .dynsym to 24
+Setting ent-size for .gnu.version_r to 0
+Setting ent-size for .rela.dyn to 24
+Writing strtab at filepos=12000
+Writing section headers at filepos=12101
+Total dollops: 969
+Total dollop entries: 3970
+Truncated dollops: 2
+Avg dollop entries per dollop: 4.09701
+Truncated dollop fraction: 0.00206398
+Total trampolines: 7
+Total 2-byte pin trampolines: 0
+Total 5-byte pin trampolines: 7
+Total trampoline space pins: 35
+Other space: 4
+Total free ranges: 11
+    Coalesced: 398
+Not Coalesced: 191
+Truncated During Coalesced: 2
+#ATTRIBUTE start_time=2019-04-20T18:21:46+00:00
+#ATTRIBUTE end_time=2019-04-20T18:21:47+00:00
+#ATTRIBUTE step_name=zipr
+#ATTRIBUTE step_number=3
+#ATTRIBUTE step_command=/opt/ps_zipr/irdb-libs/plugins_install/zipr.sh 6 
+#ATTRIBUTE step_exitcode=0

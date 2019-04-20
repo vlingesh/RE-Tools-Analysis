@@ -1,0 +1,45 @@
+fix_landing_pads=1
+Filling in cfg for file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
+Found 3909 instructions.
+Missed instruction count=0
+Found a total of 0 new instructions.
+Caution: Was unable to find instructions for these addresses:
+
+Allocated new scoop for section .interp(400200-40021b) perms=4 relro=false
+Allocated new scoop for section .note.ABI-tag(40021c-40023b) perms=4 relro=false
+Allocated new scoop for section .note.gnu.build-id(40023c-40025f) perms=4 relro=false
+Allocated new scoop for section .gnu.hash(400260-40028f) perms=4 relro=false
+Allocated new scoop for section .dynsym(400290-400a27) perms=4 relro=false
+Allocated new scoop for section .dynstr(400a28-400d43) perms=4 relro=false
+Allocated new scoop for section .gnu.version(400d44-400de5) perms=4 relro=false
+Allocated new scoop for section .gnu.version_r(400de8-400e47) perms=4 relro=false
+Allocated new scoop for section .rela.dyn(400e48-400ea7) perms=4 relro=false
+Allocated new scoop for section .rela.plt(400ea8-401597) perms=4 relro=false
+Skipping scoop for section (executable) .init
+Skipping scoop for section (executable) .plt
+Skipping scoop for section (executable) .text
+Skipping scoop for section (executable) .fini
+Allocated new scoop for section .rodata(405420-40659f) perms=4 relro=false
+Allocated new scoop for section .eh_frame_hdr(4065a0-40680b) perms=4 relro=false
+Allocated new scoop for section .eh_frame(406810-40757b) perms=4 relro=false
+Allocated new scoop for section .init_array(607580-607587) perms=6 relro=false
+Allocated new scoop for section .fini_array(607588-60758f) perms=6 relro=false
+Allocated new scoop for section .jcr(607590-607597) perms=6 relro=false
+Allocated new scoop for section .dynamic(607598-607787) perms=6 relro=false
+Allocated new scoop for section .got(607788-60778f) perms=6 relro=false
+Allocated new scoop for section .got.plt(607790-6079f7) perms=6 relro=false
+Allocated new scoop for section .data(6079f8-607a07) perms=6 relro=false
+Allocated new scoop for section .bss(607a40-617d67) perms=6 relro=false
+Skipping scoop for section (not loadable) .comment
+Skipping scoop for section (not loadable) pydata
+Skipping scoop for section (not loadable) .shstrtab
+Completed eh-frame parsing
+#ATTRIBUTE targets_set=3b7
+#ATTRIBUTE fallthroughs_set=dbc
+#ATTRIBUTE scoops_detected=15
+#ATTRIBUTE start_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE end_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE elapsed_time=0.056452
+#ATTRIBUTE step_name=/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_cfg.so
+#ATTRIBUTE step_command=  /opt/ps_zipr/irdb-libs/plugins_install/thanos.exe "/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_cfg.so --step-args 6 "
+#ATTRIBUTE step_exitcode=0

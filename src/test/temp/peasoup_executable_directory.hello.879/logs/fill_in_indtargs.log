@@ -1,0 +1,139 @@
+Parsing parameters with argc= 0
+Setting unpin limit to: 9223372036854775807
+New Variant, after reading registration, is: (variant_id=6:orig_pid=6:name=hello_stamped)
+Analyzing file file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
+Finding thunk bases
+Checking section .interp
+Checking section .note.ABI-tag
+Checking section .note.gnu.build-id
+Checking section .gnu.hash
+Checking section .dynsym
+Checking section .dynstr
+Checking section .gnu.version
+Checking section .gnu.version_r
+Checking section .rela.dyn
+Checking section .rela.plt
+Checking section .rodata
+Checking section .eh_frame_hdr
+Checking section .eh_frame
+Checking section .init_array
+Checking section .fini_array
+Checking section .jcr
+Checking section .dynamic
+Checking section .got
+Checking section .got.plt
+Checking section .data
+TextToPrintf analysis of 'mov rdx, rdi' successful at 402383
+TextToPrintf analysis of 'lea rcx, [rsp + 8]' successful at 402386
+TextToPrintf analysis of 'mov esi, 1' successful at 40238b
+TextToPrintf analysis of 'mov rdi, qword [7 + 0x2056b9]' successful at 402390
+TextToPrintf analysis of 'mov edx, 0x4055d3' successful at 402434
+TextToPrintf analysis of 'mov ecx, eax' successful at 402439
+TextToPrintf analysis of 'mov esi, 1' successful at 40243b
+TextToPrintf analysis of 'mov rdi, qword [7 + 0x205609]' successful at 402440
+TextToPrintf analysis of 'mov rdi, qword [7 + 0x2055f3]' successful at 402456
+TextToPrintf analysis of 'lea rcx, [rsp + 8]' successful at 40245d
+TextToPrintf analysis of 'mov rdx, rbx' successful at 402462
+TextToPrintf analysis of 'mov esi, 1' successful at 402465
+TextToPrintf analysis of 'lea rcx, [rsp + 8]' successful at 402502
+TextToPrintf analysis of 'mov rdx, rsi' successful at 402507
+TextToPrintf analysis of 'mov esi, 1' successful at 40250a
+TextToPrintf analysis of 'mov rdi, qword [7 + 0x20553a]' successful at 40250f
+TextToPrintf analysis of 'lea r9, [rsp + 8]' successful at 4025c7
+TextToPrintf analysis of 'mov r8, rsi' successful at 4025cc
+TextToPrintf analysis of 'mov rdi, rbx' successful at 4025cf
+TextToPrintf analysis of 'mov rcx, -1' successful at 4025d2
+TextToPrintf analysis of 'mov edx, 1' successful at 4025d9
+TextToPrintf analysis of 'mov esi, 0x1000' successful at 4025de
+TextToPrintf analysis of 'mov edx, 1' successful at 40517d
+TextToPrintf analysis of 'movsxd r9, eax' successful at 405182
+TextToPrintf analysis of 'mov esi, 0x17' successful at 405185
+TextToPrintf analysis of 'mov rdi, rsp' successful at 40518a
+TextToPrintf analysis of 'mov r8d, 0x406495' successful at 40518d
+TextToPrintf analysis of 'mov ecx, 0x17' successful at 405193
+Found .eh_frame is section 17
+Found .eh_frame section addr is 0x406810
+Did not find .gcc_except_table immediately after .eh_frame
+encoding=27
+Starting check for thunks
+=========================================
+# ATTRIBUTE fill_in_indtargs::total_indirect_targets=558
+401598, 4015ad, 4015d6, 4015e6, 4015f6, 401606, 401616, 401626, 401636, 401646
+401656, 401666, 401676, 401686, 401696, 4016a6, 4016b6, 4016c6, 4016d6, 4016e6
+4016f6, 401706, 401716, 401726, 401736, 401746, 401756, 401766, 401776, 401786
+401796, 4017a6, 4017b6, 4017c6, 4017d6, 4017e6, 4017f6, 401806, 401816, 401826
+401836, 401846, 401856, 401866, 401876, 401886, 401896, 4018a6, 4018b6, 4018c6
+4018d6, 4018e6, 4018f6, 401906, 401916, 401926, 401936, 401946, 401956, 401966
+401976, 401986, 401996, 4019a6, 4019b6, 4019c6, 4019d6, 4019e6, 4019f6, 401a06
+401a16, 401a26, 401a36, 401a46, 401a56, 401a66, 401a70, 401a75, 401a9e, 401b20
+401b32, 401b40, 401b60, 401b93, 401bb4, 401cc0, 401d00, 401d10, 401d30, 401d4e
+401d75, 401d82, 401dd2, 401de7, 401df7, 401e02, 401e1f, 401e3d, 401e52, 401e5c
+401e6f, 401e87, 401e91, 401ea1, 401eb9, 401ec7, 401ee3, 401eee, 401f06, 401f29
+401f3c, 401f48, 401f50, 401f58, 401f7c, 401f97, 401fc1, 401fc9, 401fd3, 402003
+402012, 402032, 40204e, 402061, 402086, 4020b4, 4020cc, 4020e2, 402110, 402120
+402144, 40215b, 40216b, 402189, 4021a9, 4021b5, 4021c6, 402237, 402244, 40227a
+4022ae, 4022d7, 4023bb, 402434, 40244e, 40248e, 40253a, 402542, 40260a, 40261c
+402657, 40267f, 40268f, 40269b, 4026ab, 4026da, 402708, 402716, 402736, 402792
+4027bd, 4027ce, 402815, 40283c, 40284b, 40285a, 40287f, 402887, 4028bf, 4028e6
+402904, 40291a, 40293c, 402958, 402970, 40299f, 4029bf, 4029dc, 4029e4, 402a02
+402a0a, 402a20, 402a8c, 402afb, 402b1f, 402b3c, 402b69, 402bb3, 402bcc, 402bf3
+402c15, 402c25, 402c43, 402c5e, 402c74, 402c7d, 402c8d, 402ca1, 402cae, 402cbe
+402ce8, 402cfc, 402d02, 402d0f, 402d1e, 402d2f, 402d42, 402d65, 402d77, 402d83
+402d9f, 402db1, 402dba, 402dca, 402dd8, 402de1, 402de7, 402ded, 402e04, 402e0d
+402e13, 402e6c, 402e82, 402e8e, 402e9a, 402ed9, 402ee1, 402ef0, 402efa, 402f07
+402f0f, 402f64, 402f84, 402f94, 402f9f, 402fa9, 402fb6, 403007, 403031, 40304c
+403077, 40307f, 403087, 403091, 4030f6, 403115, 403128, 40314b, 403153, 40315f
+403170, 403184, 4031a2, 4031b5, 4031d8, 4031e0, 4031eb, 40320c, 403275, 403283
+40328b, 4032a3, 4032b5, 4032d7, 4032f0, 4032fb, 403308, 40331d, 40334f, 403377
+4033b1, 4033f1, 403411, 403426, 40343b, 403458, 403470, 403485, 4034b5, 4034e3
+403514, 403529, 40354b, 403567, 403599, 4035c5, 4035e2, 4035ff, 40361c, 403639
+403656, 403673, 403690, 4036ad, 4036ca, 4036e7, 403704, 403721, 403747, 403764
+403781, 40379e, 4037bb, 4037d8, 4037f5, 403812, 40382f, 40384c, 403869, 403886
+4038a3, 4038c0, 4038dd, 4038fa, 403920, 40393d, 40395a, 403977, 403994, 4039b1
+4039ce, 4039fd, 403a1a, 403a34, 403a4d, 403a6a, 403a84, 403a9d, 403ac3, 403ae0
+403afd, 403b23, 403b3d, 403b55, 403b6f, 403b8a, 403b9e, 403bb2, 403bc6, 403bda
+403bee, 403c02, 403c16, 403c2a, 403c3e, 403c52, 403c66, 403c7a, 403c8e, 403ca2
+403cb6, 403cca, 403cde, 403cf2, 403d06, 403d1a, 403d2e, 403d42, 403d56, 403d6a
+403d7e, 403d92, 403da6, 403dba, 403dce, 403de2, 403df6, 403e0a, 403e1e, 403e32
+403e46, 403e5a, 403e6e, 403e84, 403e98, 403eaa, 403ebc, 403fbb, 404023, 404039
+404045, 404053, 404061, 40406f, 40409c, 4040ae, 4040c2, 404104, 40411f, 404129
+40413c, 404154, 404160, 404174, 4041b1, 4041ec, 4041f4, 404221, 404239, 404266
+404278, 404280, 404290, 4042c0, 4042c8, 4042e6, 40430a, 404312, 404325, 404333
+404344, 404359, 404361, 4043ac, 4043b6, 4043df, 4043f3, 40440b, 404420, 404428
+40442e, 404446, 404466, 404483, 40448b, 404491, 4044b2, 4044c6, 4044e2, 4044ec
+404504, 404519, 40459e, 4045b3, 4045c7, 4045d7, 4045eb, 4045f7, 40460c, 404620
+404636, 40464a, 40465e, 404696, 4046ad, 4046b8, 4046c1, 4046cf, 4046f3, 404717
+40474e, 404763, 40476e, 404779, 40477f, 404787, 4047ac, 4047c0, 4047f0, 4047fe
+40480d, 40484b, 404859, 40486a, 40488a, 40489f, 4048ab, 4048ba, 4048cd, 4048d6
+404903, 40491d, 404950, 404960, 404995, 4049a8, 4049bd, 4049d3, 404a0b, 404a26
+404a31, 404a99, 404ad3, 404aed, 404afd, 404b12, 404b1c, 404b59, 404b71, 404b96
+404bd4, 404be9, 404bf1, 404c05, 404c25, 404c3a, 404c42, 404c7a, 404c82, 404cd8
+404d3b, 404d46, 404d72, 404d82, 404d9e, 404da8, 404dd0, 404de8, 404df0, 404e05
+404e56, 404e6b, 404ed1, 404ee8, 404f4a, 404f56, 404f6e, 404f83, 404fb0, 404fc1
+404fda, 404fe7, 40500b, 405019, 405038, 405055, 405073, 40507f, 405090, 405098
+4050a4, 4050ac, 4050b4, 4050d0, 4050e0, 4050f5, 40516e, 40517d, 40519f, 4051b1
+4051f1, 40522b, 40523d, 40526b, 405295, 4052ae, 4052c4, 4052ee, 4052fb, 40531c
+405334, 405346, 40536c, 405390, 4053c3, 4053dd, 405400, 405404, 
+=========================================
+# ATTRIBUTE fill_in_indtargs::call_hellnode_size=9
+# ATTRIBUTE fill_in_indtargs::jmp_hellnode_size=81
+# ATTRIBUTE fill_in_indtargs::basicret_hellnode_size=474
+# ATTRIBUTE fill_in_indtargs::fullret_hellnode_size=474
+# ATTRIBUTE fill_in_indtargs::total_ibtas_set=84
+# ATTRIBUTE fill_in_indtargs::unpin_count_.fini_array=1
+# ATTRIBUTE fill_in_indtargs::unpin_count_.got.plt=74
+# ATTRIBUTE fill_in_indtargs::unpin_count_.init_array=1
+# ATTRIBUTE fill_in_indtargs::total_elftable_unpins=3
+# ATTRIBUTE fill_in_indtargs::switch_type3_pins=0
+# ATTRIBUTE fill_in_indtargs::switch_type3_unpins=0
+# ATTRIBUTE Split_Exception_Handler::total_eh_programs_created=174
+# ATTRIBUTE Split_Exception_Handler::total_eh_programs_reused=3591
+# ATTRIBUTE Split_Exception_Handler::total_eh_programs=3765
+# ATTRIBUTE Split_Exception_Handler::pct_eh_programs=4.621514%
+# ATTRIBUTE Split_Exception_Handler::pct_eh_programs_reused=95.378488%
+#ATTRIBUTE start_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE end_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE elapsed_time=0.086679
+#ATTRIBUTE step_name=/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_indtargs.so
+#ATTRIBUTE step_command=  /opt/ps_zipr/irdb-libs/plugins_install/thanos.exe "/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_indtargs.so --step-args 6 "
+#ATTRIBUTE step_exitcode=0

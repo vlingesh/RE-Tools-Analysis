@@ -1,0 +1,100 @@
+Reading variant 6 from database.
+Fixing calls->push/jmp in variant (variant_id=6:orig_pid=6:name=hello_stamped).
+ELF Header
+
+  Class:      ELF64
+  Encoding:   Little endian
+  ELFVersion: Current
+  Type:       Executable file
+  Machine:    Advanced Micro Devices X86-64 processor
+  Version:    Current
+  Entry:      0x401a75
+  Flags:      0x0
+
+Section Headers:
+[  Nr ] Type              Addr             Size             ES   Flg
+        Lk   Inf  Al      Name
+[    0] NULL              0000000000000000 0000000000000000 0000     
+        0000 0000 0000                      
+[    1] PROGBITS          0000000000400200 000000000000001c 0000 A   
+        0000 0000 0001    .interp           
+[    2] NOTE              000000000040021c 0000000000000020 0000 A   
+        0000 0000 0004    .note.ABI-tag     
+[    3] NOTE              000000000040023c 0000000000000024 0000 A   
+        0000 0000 0004    .note.gnu.build-id 
+[    4] ? (0x6ffffff6)    0000000000400260 0000000000000030 0000 A   
+        0005 0000 0008    .gnu.hash         
+[    5] DYNSYM            0000000000400290 0000000000000798 0018 A   
+        0006 0001 0008    .dynsym           
+[    6] STRTAB            0000000000400a28 000000000000031c 0000 A   
+        0000 0000 0001    .dynstr           
+[    7] ? (0x6fffffff)    0000000000400d44 00000000000000a2 0002 A   
+        0005 0000 0002    .gnu.version      
+[    8] ? (0x6ffffffe)    0000000000400de8 0000000000000060 0000 A   
+        0006 0002 0008    .gnu.version_r    
+[    9] RELA              0000000000400e48 0000000000000060 0018 A   
+        0005 0000 0008    .rela.dyn         
+[   10] RELA              0000000000400ea8 00000000000006f0 0018 A   
+        0005 0017 0008    .rela.plt         
+[   11] PROGBITS          0000000000401598 000000000000001a 0000 AX  
+        0000 0000 0004    .init             
+[   12] PROGBITS          00000000004015c0 00000000000004b0 0010 AX  
+        0000 0000 0010    .plt              
+[   13] PROGBITS          0000000000401a70 0000000000003992 0000 AX  
+        0000 0000 0010    .text             
+[   14] PROGBITS          0000000000405404 0000000000000009 0000 AX  
+        0000 0000 0004    .fini             
+[   15] PROGBITS          0000000000405420 0000000000001180 0000 A   
+        0000 0000 0020    .rodata           
+[   16] PROGBITS          00000000004065a0 000000000000026c 0000 A   
+        0000 0000 0004    .eh_frame_hdr     
+[   17] PROGBITS          0000000000406810 0000000000000d6c 0000 A   
+        0000 0000 0008    .eh_frame         
+[   18] INIT_ARRAY        0000000000607580 0000000000000008 0008 WA  
+        0000 0000 0008    .init_array       
+[   19] FINI_ARRAY        0000000000607588 0000000000000008 0008 WA  
+        0000 0000 0008    .fini_array       
+[   20] PROGBITS          0000000000607590 0000000000000008 0000 WA  
+        0000 0000 0008    .jcr              
+[   21] DYNAMIC           0000000000607598 00000000000001f0 0010 WA  
+        0006 0000 0008    .dynamic          
+[   22] PROGBITS          0000000000607788 0000000000000008 0008 WA  
+        0000 0000 0008    .got              
+[   23] PROGBITS          0000000000607790 0000000000000268 0008 WA  
+        0000 0000 0008    .got.plt          
+[   24] PROGBITS          00000000006079f8 0000000000000010 0000 WA  
+        0000 0000 0008    .data             
+[   25] NOBITS            0000000000607a40 0000000000010328 0000 WA  
+        0000 0000 0040    .bss              
+[   26] PROGBITS          0000000000000000 0000000000000040 0001     
+        0000 0000 0001    .comment          
+[   27] PROGBITS          0000000000000000 00000000000a07d9 0000     
+        0000 0000 0001    pydata            
+[   28] STRTAB            0000000000000000 00000000000000ff 0000     
+        0000 0000 0001    .shstrtab         
+Key to Flags: W (write), A (alloc), X (execute)
+
+
+# ATTRIBUTE fix_calls::fixed_calls=1
+# ATTRIBUTE fix_calls::no_fix_needed_calls=473
+# ATTRIBUTE fix_calls::other_instructions=3435
+# ATTRIBUTE fix_calls::fixed_pct=0.025582%
+# ATTRIBUTE fix_calls::remaining_ratio=12.100282%
+# ATTRIBUTE fix_calls::other_insts_ratio=87.874138%
+# ATTRIBUTE fix_calls::no_target_insn=0
+# ATTRIBUTE fix_calls::no_fallthrough_insn=0
+# ATTRIBUTE fix_calls::target_not_in_function=1
+# ATTRIBUTE fix_calls::call_to_not_entry=0
+# ATTRIBUTE fix_calls::thunk_check=0
+# ATTRIBUTE fix_calls::found_pattern=0
+# ATTRIBUTE fix_calls::in_ehframe=0
+# ATTRIBUTE fix_calls::no_fix_for_ib=56
+# ATTRIBUTE fix_calls::no_fix_for_safefn=0
+# ATTRIBUTE fix_calls::other_fixes=236
+Done!
+#ATTRIBUTE start_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE end_time=Sat Apr 20 18:21:45 2019
+#ATTRIBUTE elapsed_time=0.029715
+#ATTRIBUTE step_name=/opt/ps_zipr/irdb-libs/plugins_install/libfix_calls.so
+#ATTRIBUTE step_command=  /opt/ps_zipr/irdb-libs/plugins_install/thanos.exe "/opt/ps_zipr/irdb-libs/plugins_install/libfix_calls.so --step-args 6 "
+#ATTRIBUTE step_exitcode=0

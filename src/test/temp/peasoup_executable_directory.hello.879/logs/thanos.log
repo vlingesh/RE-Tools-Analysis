@@ -1,0 +1,6 @@
+#ATTRIBUTE start_time=2019-04-20T18:21:45+00:00
+#ATTRIBUTE end_time=2019-04-20T18:21:46+00:00
+#ATTRIBUTE step_name= fill_in_cfg fill_in_indtargs fix_calls stack_stamp
+#ATTRIBUTE step_number=2
+#ATTRIBUTE step_command=/opt/ps_zipr/irdb-libs/plugins_install/thanos.exe  "/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_cfg.so --step-args 6 " "/opt/ps_zipr/irdb-libs/plugins_install/libfill_in_indtargs.so --step-args 6 " "/opt/ps_zipr/irdb-libs/plugins_install/libfix_calls.so --step-args 6 " "/home/zuser/irdb-cookbook-examples/plugins_install/libstack_stamp.so -optional --step-args 6 " 
+#ATTRIBUTE step_exitcode=0

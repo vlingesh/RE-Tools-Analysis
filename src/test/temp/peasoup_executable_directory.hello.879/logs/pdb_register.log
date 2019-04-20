@@ -1,0 +1,443 @@
++ PROGRAM_NAME=hello_stamped
++ PROGRAM_PEASOUP_DIR=/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879
++ VARIANT_ID_OUTPUT=registered.id
++ '[' -z hello_stamped ']'
++ '[' '!' -d /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879 ']'
++ cd /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879
+++ hostname
++ HOSTNAME=5e4e84a327be
+++ pwd
++ FILENAME=/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
++ URL=file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
+++ uname -m
++ ARCH=x86_64
++ '[' '!' -f /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe ']'
+++ cut -f1 '-d '
+++ md5sum /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
++ MD5HASH=15d2e474016f333192f3cc6face95d8e
++ echo PGDATABASE is peasoup_zuser
+PGDATABASE is peasoup_zuser
+++ sed 's/^[ \t]*//'
+++ psql -q -t -c 'INSERT INTO variant_info (schema_version_id,name) VALUES ('\''2'\'', '\''hello_stamped'\'') RETURNING variant_id;'
++ PROGRAM_ID=6
++ '[' '!' 0 -eq 0 ']'
++ psql -q -t -c 'UPDATE variant_info SET orig_variant_id = '\''6'\'' WHERE variant_id = '\''6'\'';'
++ update_file_info hello_stamped file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe x86_64 15d2e474016f333192f3cc6face95d8e /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe 6 'original executable that was passed to ps_analyze.sh'
++ pn=hello_stamped
++ url=file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
++ arch=x86_64
++ md5=15d2e474016f333192f3cc6face95d8e
++ fn=/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
++ pid=6
++ comment='original executable that was passed to ps_analyze.sh'
++ echo Adding /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe to IRDB.
+Adding /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe to IRDB.
++ pn=pn_hello_stamped_6
+++ sed 's/[^a-zA-Z0-9]/_/g'
+++ echo pn_hello_stamped_6
++ pn=pn_hello_stamped_6
+++ cut '-d ' -f2
+++ psql -t -c '\lo_import '\''/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe'\'' '\''original executable that was passed to ps_analyze.sh'\'''
++ oid=40960
+++ sed 's/^[ \t]*//'
+++ psql -q -t -c 'INSERT INTO file_info (url, arch, hash, elfoid) VALUES ('\''file://5e4e84a327be/home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe'\'', '\''x86_64'\'', '\''15d2e474016f333192f3cc6face95d8e'\'', '\''40960'\'') RETURNING file_id;'
++ FILE_ID=6
++ pn=table_6_6
++ psql -q -t -c 'UPDATE file_info SET orig_file_id = '\''6'\'', address_table_name = '\''table_6_6_address'\'', function_table_name = '\''table_6_6_function'\'', instruction_table_name = '\''table_6_6_instruction'\'', icfs_table_name = '\''table_6_6_icfs'\'', icfs_map_table_name= '\''table_6_6_icfs_map'\'', relocs_table_name = '\''table_6_6_relocs'\'', types_table_name = '\''table_6_6_types'\'', scoop_table_name='\''table_6_6_data'\'', ehpgm_table_name = '\''table_6_6_ehpgm'\'', ehcss_table_name = '\''table_6_6_ehcss'\'' WHERE file_id = '\''6'\'';'
++ psql -q -t -c 'INSERT INTO variant_dependency (variant_id, file_id) VALUES ('\''6'\'', '\''6'\'')'
++ create_table table_6_6_address table_6_6_function table_6_6_instruction table_6_6_icfs table_6_6_icfs_map table_6_6_relocs table_6_6_types table_6_6_data table_6_6_ehpgm table_6_6_ehcss
++ /opt/ps_zipr/tools/db/pdb_create_program_tables.sh table_6_6_address table_6_6_function table_6_6_instruction table_6_6_icfs table_6_6_icfs_map table_6_6_relocs table_6_6_types table_6_6_data table_6_6_ehpgm table_6_6_ehcss db.tmp.1024
++ atn=table_6_6_address
++ ftn=table_6_6_function
++ itn=table_6_6_instruction
++ icfs=table_6_6_icfs
++ icfs_map=table_6_6_icfs_map
++ rtn=table_6_6_relocs
++ typ=table_6_6_types
++ dtn=table_6_6_data
++ ehpgms=table_6_6_ehpgm
++ ehcss=table_6_6_ehcss
++ file=db.tmp.1024
++ echo Creating tables table_6_6_address, table_6_6_function, table_6_6_instruction, table_6_6_icfs, table_6_6_icfs_map, table_6_6_relocs, table_6_6_types, and table_6_6_data.
+Creating tables table_6_6_address, table_6_6_function, table_6_6_instruction, table_6_6_icfs, table_6_6_icfs_map, table_6_6_relocs, table_6_6_types, and table_6_6_data.
++ DB_SCRIPT=db.tmp.1024
++ sed s/#ICFS_MAP#/table_6_6_icfs_map/g
++ sed s/#ICFS#/table_6_6_icfs/g
++ sed s/#RTN#/table_6_6_relocs/g
++ sed s/#DTN#/table_6_6_data/g
++ sed s/#EHPGM#/table_6_6_ehpgm/g
++ sed s/#EHCS#/table_6_6_ehcss/g
++ sed s/#ITN#/table_6_6_instruction/g
++ sed s/#TYP#/table_6_6_types/g
++ sed s/#FTN#/table_6_6_function/g
++ sed s/#ATN#/table_6_6_address/g
++ cat /opt/ps_zipr/tools/db/pdb.createprogram.tbl
+++ cat db.tmp.1024
++ psql -q -t -c '-- 
+-- 
+--  WARNING!  If you edit these tables, you must also edit the API in $SECURITY_TRANSFORMS_HOME/libIRDB/src/variantid.cpp
+-- 
+-- 
+
+CREATE TABLE table_6_6_address
+(
+  address_id         SERIAL PRIMARY KEY,		-- key
+  file_id            integer REFERENCES file_info,	-- which file this address is part of
+  vaddress_offset    bigint,				-- the offset into the file
+  doip_id            integer DEFAULT -1 		-- the DOIP
+);
+
+CREATE TABLE table_6_6_function
+(
+  function_id        		SERIAL PRIMARY KEY,	-- key
+  entry_point_id     		integer, 		-- id of the address that is the entry point of this function. 
+  name               		text,			-- name of this function
+  stack_frame_size   		integer,		-- believed stack frame size
+  out_args_region_size		integer,		-- believed out arg size
+  use_frame_pointer	    	boolean,		-- believed whether this function uses the FP
+  is_safe					boolean DEFAULT FALSE,		-- believed whether this function is safe
+  type_id               	integer DEFAULT -1, 	-- id for the type that describes the function prototype
+  doip_id	          	integer DEFAULT -1 	-- the DOIP
+);
+
+CREATE TABLE table_6_6_types
+(
+  type_id            integer,     
+  type               integer DEFAULT 0,    -- possible types (0: UNKNOWN)
+  name               text DEFAULT '\'''\'',      -- string representation of the type
+  ref_type_id        integer DEFAULT -1,   -- for aggregate types
+  pos                integer DEFAULT -1,   -- for aggregate types, position in aggregate
+  ref_type_id2       integer DEFAULT -1,   -- for func types
+  doip_id            integer DEFAULT -1   -- the DOIP
+);
+
+CREATE TABLE table_6_6_data
+(
+  scoop_id     	     SERIAL PRIMARY KEY,	-- key
+  name               text DEFAULT '\'''\'',    	-- string representation of the type
+  type_id            integer,     		-- the type of the data, as an index into the table table.
+  start_address_id   integer, 			-- address id for start.
+  end_address_id     integer,			-- address id for end
+  permissions        integer,     		-- in umask format (bitmask for rwx)
+  relro	     	     bit, 			-- is this scoop a relro scoop (i.e., is r/w until relocs are done).
+  data               bytea			-- the actual bytes of the scoop 
+);
+
+CREATE TABLE table_6_6_data_part2
+(
+  scoop_id     	     SERIAL PRIMARY KEY,	-- key
+  name               text DEFAULT '\'''\'',    	-- string representation of the type
+  type_id            integer,     		-- the type of the data, as an index into the table table.
+  start_address_id   integer, 			-- address id for start.
+  end_address_id     integer,			-- address id for end
+  permissions        integer,     		-- in umask format (bitmask for rwx)
+  relro	     	     bit, 			-- is this scoop a relro scoop (i.e., is r/w until relocs are done).
+  data               bytea			-- the actual bytes of the scoop 
+);
+
+CREATE TABLE table_6_6_instruction
+(
+  instruction_id	    SERIAL PRIMARY KEY,		-- key
+  address_id                integer REFERENCES table_6_6_address,	-- which address this instruction si at
+  parent_function_id        integer,			-- does this instruction belong to a func, if so, which
+  orig_address_id           integer,			-- where did this instruction come from in the orig pgm.
+  fallthrough_address_id    integer DEFAULT -1,		-- the fallthrough address (if can fall through)
+  target_address_id         integer DEFAULT -1,		-- the target address (if direct) 
+  icfs_id                   integer DEFAULT -1,  	-- ICFS set id
+  ehpgm_id                  integer DEFAULT -1,  	-- id of EhProgram object (may be NOT_IN_DATABASE).
+  ehcss_id                  integer DEFAULT -1,  	-- id of EhCallSite object (may be NOT_IN_DATABASE).
+  data                      bytea,			-- the actual bytes of the instruction 
+  callback                  text,			-- a callback registered for this instruction
+  comment                   text,			-- a comment for human debugging
+  ind_target_address_id	    integer DEFAULT -1,		-- is this instruction jumped to indirectly, if so, it'\''s using this addr
+  doip_id		    integer DEFAULT -1 		-- the DOIP
+);
+
+CREATE TABLE table_6_6_relocs
+(
+	reloc_id	      	integer, 	-- id in the table
+	reloc_offset 	  	integer DEFAULT 0,	-- how far into the object/instruction is the relocation
+	reloc_type	    	text DEFAULT '\'''\'',	-- what type is the relocation.
+	instruction_id  	integer DEFAULT -1,	-- the object/instruction for this reloc, field name is anachronistic. 
+	addend  		integer DEFAULT 0,	-- the addend for this relocation in case it'\''s hard to store the addend in the relocated object.
+	wrt_id  		integer DEFAULT -1,	-- the object that this reloc is with respect to.
+	doip_id	        	integer DEFAULT -1	-- the DOIP
+);
+
+-- keep track of indirect control flow sets (ibtargets)
+CREATE TABLE table_6_6_icfs
+(
+	icfs_id		SERIAL PRIMARY KEY, 						-- set id
+	icfs_status	icfs_analysis_result DEFAULT '\''icfs_analysis_incomplete'\''
+);
+
+-- map set id to addresses
+-- by mapping to address_id, we allow cross-file references
+CREATE TABLE table_6_6_icfs_map
+(
+  icfs_id	      integer REFERENCES table_6_6_icfs(icfs_id),
+  address_id      integer,
+  UNIQUE(icfs_id,address_id)   
+);
+
+CREATE TABLE table_6_6_ehpgm
+(
+	eh_pgm_id	integer,	-- id of this object.
+	caf		integer,	-- code alignment factor.
+	daf		integer,	-- data alignment factor
+	return_register	integer,	-- dwarf return register.
+	ptrsize		integer,	-- size of a pointer, 4 or 8.
+	cie_program	text,		-- for the cie, the bytes that make up a cie program, encoded as hex with commas separating instructions.
+	fde_program	text		-- for the fde, bytes as above
+);
+
+CREATE TABLE table_6_6_ehcss
+(
+	ehcs_id		integer,	-- id of this object.
+	tt_encoding	integer,	-- the encoding of the type table.
+	ttov		text,		-- the order of TT entries to use, a 0 indicates a cleanup
+	lp_insn_id	integer 	-- the landing pad instruction'\''s id.
+);'
++ echo Importing /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.annot into IRDB via meds2pdb
+Importing /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.annot into IRDB via meds2pdb
++ /opt/ps_zipr/irdb-libs/bin/meds2pdb /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.annot /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.infoannot 6 table_6_6_function table_6_6_instruction table_6_6_address table_6_6_types table_6_6_icfs table_6_6_icfs_map /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
+Annotation file: /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.annot
+Info annotation file: /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe.infoannot
+File ID: 6
+FTN: table_6_6_function
+ITN: table_6_6_instruction
+ATN: table_6_6_address
+TYP: table_6_6_types
+ICFSTab: table_6_6_icfs
+ICFSMapTab: table_6_6_icfs_map
+elfFile: /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe
+ELF Header
+
+  Class:      ELF64
+  Encoding:   Little endian
+  ELFVersion: Current
+  Type:       Executable file
+  Machine:    Advanced Micro Devices X86-64 processor
+  Version:    Current
+  Entry:      0x401a75
+  Flags:      0x0
+
+Section Headers:
+[  Nr ] Type              Addr             Size             ES   Flg
+        Lk   Inf  Al      Name
+[    0] NULL              0000000000000000 0000000000000000 0000     
+        0000 0000 0000                      
+[    1] PROGBITS          0000000000400200 000000000000001c 0000 A   
+        0000 0000 0001    .interp           
+[    2] NOTE              000000000040021c 0000000000000020 0000 A   
+        0000 0000 0004    .note.ABI-tag     
+[    3] NOTE              000000000040023c 0000000000000024 0000 A   
+        0000 0000 0004    .note.gnu.build-id 
+[    4] ? (0x6ffffff6)    0000000000400260 0000000000000030 0000 A   
+        0005 0000 0008    .gnu.hash         
+[    5] DYNSYM            0000000000400290 0000000000000798 0018 A   
+        0006 0001 0008    .dynsym           
+[    6] STRTAB            0000000000400a28 000000000000031c 0000 A   
+        0000 0000 0001    .dynstr           
+[    7] ? (0x6fffffff)    0000000000400d44 00000000000000a2 0002 A   
+        0005 0000 0002    .gnu.version      
+[    8] ? (0x6ffffffe)    0000000000400de8 0000000000000060 0000 A   
+        0006 0002 0008    .gnu.version_r    
+[    9] RELA              0000000000400e48 0000000000000060 0018 A   
+        0005 0000 0008    .rela.dyn         
+[   10] RELA              0000000000400ea8 00000000000006f0 0018 A   
+        0005 0017 0008    .rela.plt         
+[   11] PROGBITS          0000000000401598 000000000000001a 0000 AX  
+        0000 0000 0004    .init             
+[   12] PROGBITS          00000000004015c0 00000000000004b0 0010 AX  
+        0000 0000 0010    .plt              
+[   13] PROGBITS          0000000000401a70 0000000000003992 0000 AX  
+        0000 0000 0010    .text             
+[   14] PROGBITS          0000000000405404 0000000000000009 0000 AX  
+        0000 0000 0004    .fini             
+[   15] PROGBITS          0000000000405420 0000000000001180 0000 A   
+        0000 0000 0020    .rodata           
+[   16] PROGBITS          00000000004065a0 000000000000026c 0000 A   
+        0000 0000 0004    .eh_frame_hdr     
+[   17] PROGBITS          0000000000406810 0000000000000d6c 0000 A   
+        0000 0000 0008    .eh_frame         
+[   18] INIT_ARRAY        0000000000607580 0000000000000008 0008 WA  
+        0000 0000 0008    .init_array       
+[   19] FINI_ARRAY        0000000000607588 0000000000000008 0008 WA  
+        0000 0000 0008    .fini_array       
+[   20] PROGBITS          0000000000607590 0000000000000008 0000 WA  
+        0000 0000 0008    .jcr              
+[   21] DYNAMIC           0000000000607598 00000000000001f0 0010 WA  
+        0006 0000 0008    .dynamic          
+[   22] PROGBITS          0000000000607788 0000000000000008 0008 WA  
+        0000 0000 0008    .got              
+[   23] PROGBITS          0000000000607790 0000000000000268 0008 WA  
+        0000 0000 0008    .got.plt          
+[   24] PROGBITS          00000000006079f8 0000000000000010 0000 WA  
+        0000 0000 0008    .data             
+[   25] NOBITS            0000000000607a40 0000000000010328 0000 WA  
+        0000 0000 0040    .bss              
+[   26] PROGBITS          0000000000000000 0000000000000040 0001     
+        0000 0000 0001    .comment          
+[   27] PROGBITS          0000000000000000 00000000000a07d9 0000     
+        0000 0000 0001    pydata            
+[   28] STRTAB            0000000000000000 00000000000000ff 0000     
+        0000 0000 0001    .shstrtab         
+Key to Flags: W (write), A (alloc), X (execute)
+
+
+Rewriter::disassemble(): number of instructions: 3774
+Running objdump, like so: objdump -d --prefix-addresses /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879/a.ncexe | grep "^[0-9]"
+Found instruction from objdump at 4015cc
+Found instruction from objdump at 401a9f
+Found instruction from objdump at 401aa0
+Found instruction from objdump at 401aa5
+Found instruction from objdump at 401aa6
+Found instruction from objdump at 401aac
+Found instruction from objdump at 401ab0
+Found instruction from objdump at 401ab3
+Found instruction from objdump at 401ab5
+Found instruction from objdump at 401aba
+Found instruction from objdump at 401abd
+Found instruction from objdump at 401abf
+Found instruction from objdump at 401ac0
+Found instruction from objdump at 401ac5
+Found instruction from objdump at 401ac7
+Found instruction from objdump at 401ad0
+Found instruction from objdump at 401ad1
+Found instruction from objdump at 401ad2
+Found instruction from objdump at 401ae0
+Found instruction from objdump at 401ae5
+Found instruction from objdump at 401ae6
+Found instruction from objdump at 401aed
+Found instruction from objdump at 401af1
+Found instruction from objdump at 401af4
+Found instruction from objdump at 401af7
+Found instruction from objdump at 401afb
+Found instruction from objdump at 401afe
+Found instruction from objdump at 401b01
+Found instruction from objdump at 401b03
+Found instruction from objdump at 401b08
+Found instruction from objdump at 401b0b
+Found instruction from objdump at 401b0d
+Found instruction from objdump at 401b0e
+Found instruction from objdump at 401b13
+Found instruction from objdump at 401b15
+Found instruction from objdump at 401b18
+Found instruction from objdump at 401b19
+Found instruction from objdump at 401b1a
+Found instruction from objdump at 401b20
+Found instruction from objdump at 401b27
+Found instruction from objdump at 401b29
+Found instruction from objdump at 401b2a
+Found instruction from objdump at 401b2d
+Found instruction from objdump at 401b32
+Found instruction from objdump at 401b33
+Found instruction from objdump at 401b3a
+Found instruction from objdump at 401b3c
+Found instruction from objdump at 401b40
+Found instruction from objdump at 401b45
+Found instruction from objdump at 401b49
+Found instruction from objdump at 401b4b
+Found instruction from objdump at 401b4d
+Found instruction from objdump at 401b50
+Found instruction from objdump at 401b55
+Found instruction from objdump at 401b58
+Found instruction from objdump at 401b5a
+Found instruction from objdump at 401b5b
+Found instruction from objdump at 401b5e
+Found instruction from objdump at 401b60
+Found instruction from objdump at 401b61
+Found instruction from objdump at 401b66
+Found instruction from objdump at 401c91
+Found instruction from objdump at 401cc6
+Found instruction from objdump at 401ec9
+Found instruction from objdump at 401f9e
+Found instruction from objdump at 4020e4
+Found instruction from objdump at 402196
+Found instruction from objdump at 4021d4
+Found instruction from objdump at 4021e5
+Found instruction from objdump at 402207
+Found instruction from objdump at 402216
+Found instruction from objdump at 402252
+Found instruction from objdump at 4022f7
+Found instruction from objdump at 402317
+Found instruction from objdump at 4023c3
+Found instruction from objdump at 402497
+Found instruction from objdump at 40254b
+Found instruction from objdump at 402625
+Found instruction from objdump at 402a25
+Found instruction from objdump at 402b86
+Found instruction from objdump at 402d49
+Found instruction from objdump at 402e48
+Found instruction from objdump at 402e52
+Found instruction from objdump at 402f1b
+Found instruction from objdump at 402f25
+Found instruction from objdump at 402f32
+Found instruction from objdump at 402f3c
+Found instruction from objdump at 4031bf
+Found instruction from objdump at 4031f4
+Found instruction from objdump at 403218
+Found instruction from objdump at 403326
+Found instruction from objdump at 403332
+Found instruction from objdump at 40335d
+Found instruction from objdump at 403387
+Found instruction from objdump at 4034b9
+Found instruction from objdump at 403578
+Found instruction from objdump at 403585
+Found instruction from objdump at 4035a8
+Found instruction from objdump at 403ec4
+Found instruction from objdump at 403ece
+Found instruction from objdump at 403ed9
+Found instruction from objdump at 403ee9
+Found instruction from objdump at 403ef9
+Found instruction from objdump at 403f09
+Found instruction from objdump at 403f19
+Found instruction from objdump at 4040c7
+Found instruction from objdump at 40417b
+Found instruction from objdump at 404183
+Found instruction from objdump at 4041c7
+Found instruction from objdump at 4042ea
+Found instruction from objdump at 404374
+Found instruction from objdump at 404668
+Found instruction from objdump at 404814
+Found instruction from objdump at 4048dd
+Found instruction from objdump at 404929
+Found instruction from objdump at 404949
+Found instruction from objdump at 404952
+Found instruction from objdump at 40496d
+Found instruction from objdump at 404a87
+Found instruction from objdump at 404ab7
+Found instruction from objdump at 404b25
+Found instruction from objdump at 404b3a
+Found instruction from objdump at 404b45
+Found instruction from objdump at 404ba1
+Found instruction from objdump at 404ca3
+Found instruction from objdump at 404e07
+Found instruction from objdump at 404e2c
+Found instruction from objdump at 404fe9
+Found instruction from objdump at 405117
+Found instruction from objdump at 40512a
+Found instruction from objdump at 405154
+Found instruction from objdump at 4051b6
+Found instruction from objdump at 405381
+Found instruction from objdump at 40538b
+Found instruction from objdump at 4053f5
+Rewriter::disassemble(): number of instructions: 3909
+Number of functions: 227
+Number of instructions: 3909
+Inserting instructions in the DB
+Done inserting instructions in the DB
+annotations size: 0
+functions size: 227
+++ cat shared_libs
+cat: shared_libs: No such file or directory
++ rm registered.id
++ echo 6
++ exit 0
+#ATTRIBUTE start_time=2019-04-20T18:21:43+00:00
+#ATTRIBUTE end_time=2019-04-20T18:21:45+00:00
+#ATTRIBUTE step_name=pdb_register
+#ATTRIBUTE step_number=1
+#ATTRIBUTE step_command=/opt/ps_zipr/tools/db/pdb_register.sh hello_stamped /home/zuser/RE-Tools-Analysis/src/test/temp/peasoup_executable_directory.hello.879 registered.id 
+#ATTRIBUTE step_exitcode=0
